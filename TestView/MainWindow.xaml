@@ -4,9 +4,128 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestView"
+        xmlns:bionicSwipePageFrame="clr-namespace:BionicCode.BionicSwipePageFrame;assembly=BionicCode.BionicSwipePageFrame"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow"
+        Height="450"
+        Width="800"
+        x:Name="MainWindowControl">
+  <Window.DataContext>
+    <local:ViewModel />
+  </Window.DataContext>
+  <Window.Resources>
+    <!--<Style TargetType="{x:Type bionicSwipePageFrame:BionicSwipePageFrameHeader}">
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type bionicSwipePageFrame:BionicSwipePageFrameHeader}">
+            <Border Background="{TemplateBinding Background}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}">
+              <Grid>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0"
+                        Background="PaleGreen"
+                        Content="Previous"
+                        Command="{x:Static bionicSwipePageFrame:BionicSwipePageFrame.LoadPreviousPageRoutedCommand}"
+                        HorizontalAlignment="Left"
+                        Height="40" />
+                <Button Grid.Column="1"
+                        Background="Red"
+                        Content="Next"
+                        Command="{x:Static bionicSwipePageFrame:BionicSwipePageFrame.LoadNextPageRoutedCommand}"
+                        HorizontalAlignment="Right"
+                        Height="40" />
+              </Grid>
+            </Border>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>-->
+  </Window.Resources>
+  <Grid>
+    <StackPanel>
+      <Button Click="ButtonBase_OnClick"
+              Height="60" />
+      <bionicSwipePageFrame:BionicSwipePageFrame x:Name="PageFrame"
+                                                 BorderBrush="Red"
+                                                 BorderThickness="2" 
+                                                 TitleMemberPath="Title"
+                                                 ItemsSource="{Binding Pages}"
+                                                 Height="500"
+                                                 IsLoopingPagesEnabled="True">
+        <!--<bionicSwipePageFrame:BionicSwipePage>First XAML created page</bionicSwipePageFrame:BionicSwipePage>
+        <bionicSwipePageFrame:BionicSwipePage>Second XAML created page</bionicSwipePageFrame:BionicSwipePage>
+        <bionicSwipePageFrame:BionicSwipePage>Third XAML created page</bionicSwipePageFrame:BionicSwipePage>
+        <bionicSwipePageFrame:BionicSwipePage>Fourth XAML created page</bionicSwipePageFrame:BionicSwipePage>-->
+
+        <!--<bionicSwipePageFrame:BionicSwipePageFrame.ItemContainerStyle>
+          <Style TargetType="{x:Type bionicSwipePageFrame:BionicSwipePage}">
+            <Setter Property="SnapsToDevicePixels"
+                    Value="true" />
+            <Setter Property="Template">
+              <Setter.Value>
+                <ControlTemplate TargetType="{x:Type bionicSwipePageFrame:BionicSwipePage}">
+                  <Border Background="GreenYellow"
+                          BorderBrush="{TemplateBinding BorderBrush}"
+                          BorderThickness="{TemplateBinding BorderThickness}">
+                    <ContentPresenter x:Name="PART_ContentHost"
+                                      ContentSource="Content" />
+                  </Border>
+                </ControlTemplate>
+              </Setter.Value>
+            </Setter>
+          </Style>
+        </bionicSwipePageFrame:BionicSwipePageFrame.ItemContainerStyle>-->
+        <bionicSwipePageFrame:BionicSwipePageFrame.ItemTemplate>
+          <DataTemplate DataType="local:Page">
+            <Border>
+              <StackPanel>
+                <TextBox Text="{Binding FirstName}" />
+                <TextBox Text="{Binding LastName}" />
+              </StackPanel>
+            </Border>
+          </DataTemplate>
+        </bionicSwipePageFrame:BionicSwipePageFrame.ItemTemplate>
+        <!--<bionicSwipePageFrame:BionicSwipePageFrame.FrameHeaderStyle>
+          <Style TargetType="{x:Type bionicSwipePageFrame:BionicSwipePageFrameHeader}">
+            <Setter Property="Template">
+              <Setter.Value>
+                <ControlTemplate TargetType="{x:Type bionicSwipePageFrame:BionicSwipePageFrameHeader}">
+                  <Border Background="{TemplateBinding Background}"
+                          BorderBrush="{TemplateBinding BorderBrush}"
+                          BorderThickness="{TemplateBinding BorderThickness}">
+                    <Grid>
+                      <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                      </Grid.ColumnDefinitions>
+                      <Button Grid.Column="0"
+                              Background="CornflowerBlue"
+                              Content="Previous"
+                              Command="{x:Static bionicSwipePageFrame:BionicSwipePageFrame.LoadPreviousPageRoutedCommand}"
+                              CommandParameter="2"
+                              HorizontalAlignment="Left"
+                              Height="40" />
+                      <Button Grid.Column="1"
+                              Background="Orchid"
+                              Content="Next"
+                              Command="{x:Static bionicSwipePageFrame:BionicSwipePageFrame.LoadNextPageRoutedCommand}"
+                              CommandParameter="{Binding ElementName=MainWindowControl, Path=Page}"
+                              HorizontalAlignment="Right"
+                              Height="40" />
+                    </Grid>
+                  </Border>
+                </ControlTemplate>
+              </Setter.Value>
+            </Setter>
+          </Style>
+        </bionicSwipePageFrame:BionicSwipePageFrame.FrameHeaderStyle>-->
+      </bionicSwipePageFrame:BionicSwipePageFrame>
+    </StackPanel>
+  </Grid>
 </Window>

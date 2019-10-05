@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BionicCode.BionicSwipePageF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestView", "TestView\TestView.csproj", "{E037B790-B08D-4D43-A5A0-0537264C6CFC}"
 EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "Documentation", "Documentation\Documentation.shfbproj", "{E49F3FD3-79DB-42C8-AA57-EF1C15F2EA8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E037B790-B08D-4D43-A5A0-0537264C6CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E037B790-B08D-4D43-A5A0-0537264C6CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E037B790-B08D-4D43-A5A0-0537264C6CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E49F3FD3-79DB-42C8-AA57-EF1C15F2EA8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E49F3FD3-79DB-42C8-AA57-EF1C15F2EA8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E49F3FD3-79DB-42C8-AA57-EF1C15F2EA8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E49F3FD3-79DB-42C8-AA57-EF1C15F2EA8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

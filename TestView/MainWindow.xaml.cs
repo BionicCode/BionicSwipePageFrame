@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BionicCode.BionicSwipePageFrame;
 
 namespace TestView
 {
@@ -23,6 +24,18 @@ namespace TestView
     public MainWindow()
     {
       InitializeComponent();
+      (this.PageFrame.DataContext as ViewModel).Pages.Add(new Page() { Title = $"Page #{this.PageFrame.Items.Count + 1}" });
+      var item = new Page() { Title = $"Page #{this.PageFrame.Items.Count + 1}" };
+      (this.PageFrame.DataContext as ViewModel).Pages.Add(item);
+      this.Page = item;
     }
+
+    private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+    {
+      (this.PageFrame.DataContext as ViewModel).Pages.Add(new Page() {Title = $"Page #{this.PageFrame.Items.Count + 1}"});
+      //this.PageFrame.SelectedIndex += 1;
+    }
+
+    public Page Page { get; set; }
   }
 }
