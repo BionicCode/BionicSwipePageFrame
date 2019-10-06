@@ -104,7 +104,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="logo.ico" />
+    <Resource Include="Help.png" />
+    <Content Include="logo.ico" />
+    <Resource Include="rangers_coyotes_hockey.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BionicSwipePageFrame\BionicCode.BionicSwipePageFrame.csproj">

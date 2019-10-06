@@ -5,6 +5,9 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
 using BionicUtilities.NetStandard.ViewModel;
 
 namespace TestView
@@ -17,6 +20,13 @@ namespace TestView
     }
 
     public ObservableCollection<IPage> Pages { get; set; }
+    private Image logo;
+    /// <inheritdoc />
+    public Image Logo
+    {
+      get => new Image() { Source = new BitmapImage(new Uri("rangers_coyotes_hockey.jpg", UriKind.RelativeOrAbsolute)), Height = 100, Width = 100};
+      set => TrySetValue(value, ref this.logo);
+    }
   }
 
   public interface IPage
@@ -24,6 +34,7 @@ namespace TestView
     string Title { get; set; }
     string FirstName { get; set; }
     string LastName { get; set; }
+    ImageSource Logo { get; set; }
   }
 
   public class Page : BaseViewModel, IPage
@@ -48,6 +59,14 @@ namespace TestView
 
     /// <inheritdoc />
     public string LastName { get => this.lastName; set => TrySetValue(value, ref this.lastName); }
+
+    private ImageSource logo;
+    /// <inheritdoc />
+    public ImageSource Logo
+    {
+      get => new BitmapImage(new Uri("rangers_coyotes_hockey.jpg", UriKind.RelativeOrAbsolute));
+      set => TrySetValue(value, ref this.logo);
+    }
 
     #endregion
   }

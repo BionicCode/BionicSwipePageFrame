@@ -48,44 +48,50 @@
   </Window.Resources>
   <Grid>
     <StackPanel>
+      <ContentControl Content="{Binding Logo}"/>
       <Button Click="ButtonBase_OnClick"
               Height="60" />
       <bionicSwipePageFrame:BionicSwipePageFrame x:Name="PageFrame"
                                                  BorderBrush="Red"
                                                  BorderThickness="2" 
-                                                 TitleMemberPath="Title"
+                                                 TitleMemberPath="Logo"
                                                  ItemsSource="{Binding Pages}"
-                                                 Height="500"
+                                                 Height="400"
+                                                 Width="400"
+                                                 IsHeaderVisible="True"
                                                  IsLoopingPagesEnabled="True">
         <!--<bionicSwipePageFrame:BionicSwipePage>First XAML created page</bionicSwipePageFrame:BionicSwipePage>
         <bionicSwipePageFrame:BionicSwipePage>Second XAML created page</bionicSwipePageFrame:BionicSwipePage>
         <bionicSwipePageFrame:BionicSwipePage>Third XAML created page</bionicSwipePageFrame:BionicSwipePage>
         <bionicSwipePageFrame:BionicSwipePage>Fourth XAML created page</bionicSwipePageFrame:BionicSwipePage>-->
 
-        <!--<bionicSwipePageFrame:BionicSwipePageFrame.ItemContainerStyle>
-          <Style TargetType="{x:Type bionicSwipePageFrame:BionicSwipePage}">
-            <Setter Property="SnapsToDevicePixels"
-                    Value="true" />
-            <Setter Property="Template">
+        <bionicSwipePageFrame:BionicSwipePageFrame.ItemContainerStyle>
+         <Style TargetType="{x:Type bionicSwipePageFrame:BionicSwipePage}">
+           <!--  <Setter Property="Height"
+                    Value="400" />
+            <Setter Property="Width"
+                    Value="400" />-->
+            <!--<Setter Property="Template">
               <Setter.Value>
                 <ControlTemplate TargetType="{x:Type bionicSwipePageFrame:BionicSwipePage}">
                   <Border Background="GreenYellow"
                           BorderBrush="{TemplateBinding BorderBrush}"
                           BorderThickness="{TemplateBinding BorderThickness}">
-                    <ContentPresenter x:Name="PART_ContentHost"
-                                      ContentSource="Content" />
+                    <ContentPresenter />
                   </Border>
                 </ControlTemplate>
               </Setter.Value>
-            </Setter>
+            </Setter>-->
           </Style>
-        </bionicSwipePageFrame:BionicSwipePageFrame.ItemContainerStyle>-->
+        </bionicSwipePageFrame:BionicSwipePageFrame.ItemContainerStyle>
         <bionicSwipePageFrame:BionicSwipePageFrame.ItemTemplate>
           <DataTemplate DataType="local:Page">
             <Border>
               <StackPanel>
                 <TextBox Text="{Binding FirstName}" />
                 <TextBox Text="{Binding LastName}" />
+                <Image Source="{Binding Logo}" Height="800"/>
+
               </StackPanel>
             </Border>
           </DataTemplate>

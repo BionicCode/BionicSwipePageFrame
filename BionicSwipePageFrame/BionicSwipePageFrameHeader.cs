@@ -44,11 +44,57 @@ namespace BionicCode.BionicSwipePageFrame
   ///     <MyNamespace:BionicSwipePageFrameHeader/>
   ///
   /// </summary>
+  [TemplatePart(Name = "PART_Title", Type = typeof(FrameworkElement))]
+  [TemplatePart(Name = "PART_PageHeaderTitleHostPanel", Type = typeof(Panel))]
   public class BionicSwipePageFrameHeader : Control
   {
+    public static System.Windows.ResourceKey ButtonStyleKey { get; }
+    
+    [System.ComponentModel.TypeConverter(typeof(System.Windows.LengthConverter))]
+    public static readonly DependencyProperty IconHeightProperty = DependencyProperty.Register(
+      "IconHeight",
+      typeof(double),
+      typeof(BionicSwipePageFrameHeader),
+      new PropertyMetadata(double.NaN));
+
+    [System.ComponentModel.TypeConverter(typeof(System.Windows.LengthConverter))]
+
+    public double IconHeight { get { return (double) GetValue(BionicSwipePageFrameHeader.IconHeightProperty); } set { SetValue(BionicSwipePageFrameHeader.IconHeightProperty, value); } }
+
+    public static readonly DependencyProperty IconWidthProperty = DependencyProperty.Register(
+      "IconWidth",
+      typeof(double),
+      typeof(BionicSwipePageFrameHeader),
+      new PropertyMetadata(double.NaN));
+
+    [System.ComponentModel.TypeConverter(typeof(System.Windows.LengthConverter))]
+    public double IconWidth { get { return (double) GetValue(BionicSwipePageFrameHeader.IconWidthProperty); } set { SetValue(BionicSwipePageFrameHeader.IconWidthProperty, value); } }
+
     static BionicSwipePageFrameHeader()
     {
       FrameworkElement.DefaultStyleKeyProperty.OverrideMetadata(typeof(BionicSwipePageFrameHeader), new FrameworkPropertyMetadata(typeof(BionicSwipePageFrameHeader)));
+
+      BionicSwipePageFrameHeader.ButtonStyleKey = new ComponentResourceKey(typeof(BionicSwipePageFrameHeader), "ButtonStyle");
     }
+
+    public BionicSwipePageFrameHeader()
+    {
+    }
+
+    #region Overrides of FrameworkElement
+
+    /// <inheritdoc />
+    public override void OnApplyTemplate()
+    {
+      base.OnApplyTemplate();
+      this.PART_Title = GetTemplateChild("PART_Title") as FrameworkElement;
+      this.PART_PageHeaderHostPanel = GetTemplateChild("PART_PageHeaderTitleHostPanel") as Panel;
+    }
+
+    internal Panel PART_PageHeaderHostPanel { get; set; }
+
+    internal FrameworkElement PART_Title { get; set; }
+
+    #endregion
   }
 }
