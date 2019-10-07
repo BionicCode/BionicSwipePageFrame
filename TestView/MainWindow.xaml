@@ -9,7 +9,7 @@
         Title="MainWindow"
         Height="450"
         Width="800"
-        x:Name="MainWindowControl">
+        x:Name="MainWindowControl" x:ClassModifier="internal">
   <Window.DataContext>
     <local:ViewModel />
   </Window.DataContext>
@@ -54,7 +54,7 @@
       <bionicSwipePageFrame:BionicSwipePageFrame x:Name="PageFrame"
                                                  BorderBrush="Red"
                                                  BorderThickness="2" 
-                                                 TitleMemberPath="Logo"
+                                                 TitleMemberPath="Title"
                                                  ItemsSource="{Binding Pages}"
                                                  Height="400"
                                                  Width="400"
@@ -65,13 +65,13 @@
         <bionicSwipePageFrame:BionicSwipePage>Third XAML created page</bionicSwipePageFrame:BionicSwipePage>
         <bionicSwipePageFrame:BionicSwipePage>Fourth XAML created page</bionicSwipePageFrame:BionicSwipePage>-->
 
-        <bionicSwipePageFrame:BionicSwipePageFrame.ItemContainerStyle>
+        <!--<bionicSwipePageFrame:BionicSwipePageFrame.ItemContainerStyle>
          <Style TargetType="{x:Type bionicSwipePageFrame:BionicSwipePage}">
-           <!--  <Setter Property="Height"
+             <Setter Property="Height"
                     Value="400" />
             <Setter Property="Width"
-                    Value="400" />-->
-            <!--<Setter Property="Template">
+                    Value="400" />
+            <Setter Property="Template">
               <Setter.Value>
                 <ControlTemplate TargetType="{x:Type bionicSwipePageFrame:BionicSwipePage}">
                   <Border Background="GreenYellow"
@@ -81,9 +81,9 @@
                   </Border>
                 </ControlTemplate>
               </Setter.Value>
-            </Setter>-->
+            </Setter>
           </Style>
-        </bionicSwipePageFrame:BionicSwipePageFrame.ItemContainerStyle>
+        </bionicSwipePageFrame:BionicSwipePageFrame.ItemContainerStyle>-->
         <bionicSwipePageFrame:BionicSwipePageFrame.ItemTemplate>
           <DataTemplate DataType="local:Page">
             <Border>

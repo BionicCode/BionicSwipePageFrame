@@ -57,17 +57,33 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrameHeaderTitleDataTemplateSelector.cs" />
+    <Compile Include="PageTitleDataTemplateSelector.cs" />
     <Compile Include="ValueChangedRoutedEventArgs.cs" />
     <Page Include="Icons\chevron_right.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Styles\BionicSwipePageFrameStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\BionicSwipePageStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\FrameHeaderStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\FrameHeaderTitleTemplates.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Styles\Icons.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Styles\RoundedButtonStyle.xaml">
+    <Page Include="Styles\ButtonStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -82,7 +98,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BionicSwipePageFrameHeader.cs" />
-    <Compile Include="Converter\ControlWidthTranslationStartPositionConverter.cs" />
     <Compile Include="PageNavigationDirection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

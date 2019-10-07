@@ -163,13 +163,6 @@
       <param name="sender"></param>
       <param name="e"></param>
     </member>
-    <member name="M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnPreviewPageChanged(System.Object,System.Windows.RoutedEventArgs)">
-      <summary>
-            Called when the <see cref="E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviewPageChanged" /> event is received.
-            </summary>
-      <param name="sender"></param>
-      <param name="e"></param>
-    </member>
     <member name="M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnPreviousPageChanged(BionicCode.BionicSwipePageFrame.BionicSwipePage,BionicCode.BionicSwipePageFrame.BionicSwipePage)">
       <summary>
             Called when the <see cref="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviousPage" /> property changes.
@@ -177,13 +170,97 @@
       <param name="oldValue">Old value of the <see cref="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviousPage" /> property.</param>
       <param name="newValue">New value of the <see cref="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviousPage" /> property.</param>
     </member>
-    <member name="M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnSelectedIndexChanged(System.Int32,System.Int32)">
+    <member name="M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnSelectedIndexChanged(System.Object,BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs{System.Int32})">
       <summary>
-            Called when the <see cref="P:System.Windows.Controls.Primitives.Selector.SelectedIndex" /> property changes. <br />
+            Called when the <see cref="E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedIndexChanged" /> event is received. <br />
             Executes the swipe animation.
             </summary>
-      <param name="oldValue">Old value of the <see cref="P:System.Windows.Controls.Primitives.Selector.SelectedIndex" /> property.</param>
-      <param name="newValue">New value of the <see cref="P:System.Windows.Controls.Primitives.Selector.SelectedIndex" /> property.</param>
+      <param name="sender">The event source instance.</param>
+      <param name="routedEventArgs">Event args holding the old <see cref="P:System.Windows.Controls.Primitives.Selector.SelectedIndex" /> and the <see cref="P:System.Windows.Controls.Primitives.Selector.SelectedIndex" /></param>
+    </member>
+    <member name="M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnSelectedIndexChanging(System.Object,BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs{System.Int32})">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnSelectedIndexChanging(System.Object,BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs{System.Int32})</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sender">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sender</parameter>
+            <parameter>M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnSelectedIndexChanging(System.Object,BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs{System.Int32})</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="routedEventArgs">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>routedEventArgs</parameter>
+            <parameter>M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnSelectedIndexChanging(System.Object,BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs{System.Int32})</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnSelectedItemChanged(System.Object,BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs{System.Object})">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnSelectedItemChanged(System.Object,BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs{System.Object})</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sender">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sender</parameter>
+            <parameter>M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnSelectedItemChanged(System.Object,BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs{System.Object})</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="routedEventArgs">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>routedEventArgs</parameter>
+            <parameter>M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnSelectedItemChanged(System.Object,BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs{System.Object})</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnSelectedItemChanging(System.Object,BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs{System.Object})">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnSelectedItemChanging(System.Object,BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs{System.Object})</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="sender">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sender</parameter>
+            <parameter>M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnSelectedItemChanging(System.Object,BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs{System.Object})</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="routedEventArgs">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>routedEventArgs</parameter>
+            <parameter>M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnSelectedItemChanging(System.Object,BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs{System.Object})</parameter>
+          </include>
+        </markup>
+      </param>
     </member>
     <member name="M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnSelectedPageChanged(BionicCode.BionicSwipePageFrame.BionicSwipePage,BionicCode.BionicSwipePageFrame.BionicSwipePage)">
       <summary>
@@ -212,6 +289,86 @@
             The <see cref="T:System.Windows.RoutedEvent" /> iof the <see cref="E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PageChanged" /> event.
             </summary>
     </member>
+    <member name="E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviewSelectedIndexChanged">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviewSelectedIndexChanged</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviewSelectedIndexChangedRoutedEvent">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviewSelectedIndexChangedRoutedEvent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviewSelectedIndexChanging">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviewSelectedIndexChanging</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviewSelectedIndexChangingRoutedEvent">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviewSelectedIndexChangingRoutedEvent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviewSelectedItemChanged">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviewSelectedItemChanged</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviewSelectedItemChangedRoutedEvent">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviewSelectedItemChangedRoutedEvent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviewSelectedItemChanging">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviewSelectedItemChanging</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviewSelectedItemChangingRoutedEvent">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviewSelectedItemChangingRoutedEvent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
     <member name="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviousPage">
       <summary>
         <markup>
@@ -228,46 +385,6 @@
           <include item="SMCMissingTag">
             <parameter>summary</parameter>
             <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviousPageProperty</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviousPageTranslationEndPosition">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviousPageTranslationEndPosition</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviousPageTranslationEndPositionProperty">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviousPageTranslationEndPositionProperty</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviousPageTranslationStartPosition">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviousPageTranslationStartPosition</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviousPageTranslationStartPositionProperty">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.PreviousPageTranslationStartPositionProperty</parameter>
           </include>
         </markup>
       </summary>
@@ -292,55 +409,95 @@
         </markup>
       </summary>
     </member>
+    <member name="E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedIndexChanged">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedIndexChanged</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedIndexChangedRoutedEvent">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedIndexChangedRoutedEvent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedIndexChanging">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedIndexChanging</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedIndexChangingRoutedEvent">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedIndexChangingRoutedEvent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedItemChanged">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedItemChanged</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedItemChangedRoutedEvent">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedItemChangedRoutedEvent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedItemChanging">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>E:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedItemChanging</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedItemChangingRoutedEvent">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedItemChangingRoutedEvent</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
     <member name="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedPage">
       <summary>
-            The current <see cref="T:BionicCode.BionicSwipePageFrame.BionicSwipePage" /> instance. CLR Property.
+            The currently displaying <see cref="T:BionicCode.BionicSwipePageFrame.BionicSwipePage" /> instance. 
             </summary>
     </member>
     <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedPageProperty">
       <summary>
-            The current <see cref="T:BionicCode.BionicSwipePageFrame.BionicSwipePage" /> instance. DependencyProperty.
+            The DependencyProperty for the <see cref="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedPage" /> property.
             </summary>
-    </member>
-    <member name="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedPageTranslationEndPosition">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedPageTranslationEndPosition</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedPageTranslationEndPositionProperty">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedPageTranslationEndPositionProperty</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedPageTranslationStartPosition">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedPageTranslationStartPosition</parameter>
-          </include>
-        </markup>
-      </summary>
-    </member>
-    <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedPageTranslationStartPositionProperty">
-      <summary>
-        <markup>
-          <include item="SMCMissingTag">
-            <parameter>summary</parameter>
-            <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedPageTranslationStartPositionProperty</parameter>
-          </include>
-        </markup>
-      </summary>
     </member>
     <member name="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.TitleMemberPath">
       <summary>
@@ -372,6 +529,59 @@
         </markup>
       </summary>
     </member>
+    <member name="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.ButtonStyleKey">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.ButtonStyleKey</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.IconHeight">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.IconHeight</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.IconHeightProperty">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.IconHeightProperty</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.IconWidth">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.IconWidth</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.IconWidthProperty">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.IconWidthProperty</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.OnApplyTemplate">
+      <summary>When overridden in a derived class, is invoked whenever application code or internal processes call <see cref="M:System.Windows.FrameworkElement.ApplyTemplate" />.</summary>
+    </member>
     <member name="T:BionicCode.BionicSwipePageFrame.PageNavigationDirection">
       <summary>
         <markup>
@@ -382,40 +592,108 @@
         </markup>
       </summary>
     </member>
-    <member name="T:BionicCode.BionicSwipePageFrame.Converter.ControlWidthTranslationStartPositionConverter">
+    <member name="T:BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs`1">
       <summary>
         <markup>
           <include item="SMCMissingTag">
             <parameter>summary</parameter>
-            <parameter>T:BionicCode.BionicSwipePageFrame.Converter.ControlWidthTranslationStartPositionConverter</parameter>
+            <parameter>T:BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs`1</parameter>
           </include>
         </markup>
       </summary>
+      <typeparam name="TValue">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>TValue</parameter>
+            <parameter>T:BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs`1</parameter>
+          </include>
+        </markup>
+      </typeparam>
     </member>
-    <member name="M:BionicCode.BionicSwipePageFrame.Converter.ControlWidthTranslationStartPositionConverter.#ctor">
+    <member name="M:BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs`1.#ctor(System.Windows.RoutedEvent,System.Object,`0,`0)">
       <summary>
         <markup>
           <include item="SMCAutoDocConstructor">
-            <parameter>BionicCode.BionicSwipePageFrame.Converter.ControlWidthTranslationStartPositionConverter</parameter>
+            <parameter>BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs`1</parameter>
+          </include>
+        </markup>
+      </summary>
+      <param name="routedEvent">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>routedEvent</parameter>
+            <parameter>M:BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs`1.#ctor(System.Windows.RoutedEvent,System.Object,`0,`0)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="sender">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>sender</parameter>
+            <parameter>M:BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs`1.#ctor(System.Windows.RoutedEvent,System.Object,`0,`0)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="oldValue">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>oldValue</parameter>
+            <parameter>M:BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs`1.#ctor(System.Windows.RoutedEvent,System.Object,`0,`0)</parameter>
+          </include>
+        </markup>
+      </param>
+      <param name="newValue">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>param</parameter>
+            <parameter>newValue</parameter>
+            <parameter>M:BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs`1.#ctor(System.Windows.RoutedEvent,System.Object,`0,`0)</parameter>
+          </include>
+        </markup>
+      </param>
+    </member>
+    <member name="P:BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs`1.NewValue">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs`1.NewValue</parameter>
           </include>
         </markup>
       </summary>
     </member>
-    <member name="M:BionicCode.BionicSwipePageFrame.Converter.ControlWidthTranslationStartPositionConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
-      <summary>Converts a value. </summary>
-      <param name="value">The value produced by the binding source.</param>
-      <param name="targetType">The type of the binding target property.</param>
-      <param name="parameter">The converter parameter to use.</param>
-      <param name="culture">The culture to use in the converter.</param>
-      <returns>A converted value. If the method returns <see langword="null" />, the valid null value is used.</returns>
+    <member name="P:BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs`1.OldValue">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs`1.OldValue</parameter>
+          </include>
+        </markup>
+      </summary>
     </member>
-    <member name="M:BionicCode.BionicSwipePageFrame.Converter.ControlWidthTranslationStartPositionConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
-      <summary>Converts a value. </summary>
-      <param name="value">The value that is produced by the binding target.</param>
-      <param name="targetType">The type to convert to.</param>
-      <param name="parameter">The converter parameter to use.</param>
-      <param name="culture">The culture to use in the converter.</param>
-      <returns>A converted value. If the method returns <see langword="null" />, the valid null value is used.</returns>
+    <member name="T:BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventHandler`1">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>T:BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventHandler`1</parameter>
+          </include>
+        </markup>
+      </summary>
+      <typeparam name="TValue">
+        <markup>
+          <include item="SMCMissingParamTag">
+            <parameter>typeparam</parameter>
+            <parameter>TValue</parameter>
+            <parameter>T:BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventHandler`1</parameter>
+          </include>
+        </markup>
+      </typeparam>
     </member>
   </members>
 </doc>

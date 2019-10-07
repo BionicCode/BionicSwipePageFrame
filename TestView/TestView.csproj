@@ -104,6 +104,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="meric-dagli-AThrXc5Gi2s-unsplash-683x1024.jpg" />
     <Resource Include="Help.png" />
     <Content Include="logo.ico" />
     <Resource Include="rangers_coyotes_hockey.jpg" />

@@ -12,11 +12,11 @@ using BionicUtilities.NetStandard.ViewModel;
 
 namespace TestView
 {
-  public class ViewModel : BaseViewModel
+  internal class ViewModel : BaseViewModel
   {
     public ViewModel()
     {
-      this.Pages = new ObservableCollection<IPage>() {new Page() {Title = "First Page", FirstName = "James", LastName = "Bond"}, new Page() {Title = "Second Page", FirstName = "Termi", LastName = "Nator"}};
+      this.Pages = new ObservableCollection<IPage>() {new Page() {Title = "First Page", FirstName = "James", LastName = "Bond", Logo = new BitmapImage(new Uri("/TestView;component/rangers_coyotes_hockey.jpg", UriKind.RelativeOrAbsolute)) }, new Page() {Title = "Second Page", FirstName = "Termi", LastName = "Nator", Logo = new BitmapImage(new Uri("/TestView;component/meric-dagli-AThrXc5Gi2s-unsplash-683x1024.jpg", UriKind.RelativeOrAbsolute)) } };
     }
 
     public ObservableCollection<IPage> Pages { get; set; }
@@ -29,7 +29,7 @@ namespace TestView
     }
   }
 
-  public interface IPage
+  internal interface IPage
   {
     string Title { get; set; }
     string FirstName { get; set; }
@@ -37,7 +37,7 @@ namespace TestView
     ImageSource Logo { get; set; }
   }
 
-  public class Page : BaseViewModel, IPage
+  internal class Page : BaseViewModel, IPage
   {
     #region Implementation of IPage
 
@@ -64,7 +64,7 @@ namespace TestView
     /// <inheritdoc />
     public ImageSource Logo
     {
-      get => new BitmapImage(new Uri("rangers_coyotes_hockey.jpg", UriKind.RelativeOrAbsolute));
+      get => this.logo;
       set => TrySetValue(value, ref this.logo);
     }
 

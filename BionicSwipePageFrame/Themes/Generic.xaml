@@ -2,234 +2,32 @@
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
   xmlns:local="clr-namespace:BionicCode.BionicSwipePageFrame"
-  xmlns:converter="clr-namespace:BionicCode.BionicSwipePageFrame.Converter"
   xmlns:system="clr-namespace:System;assembly=mscorlib">
 
-  <Viewbox x:Key="ChevronRightIcon"
+  <ResourceDictionary.MergedDictionaries>
+    <ResourceDictionary Source="/BionicCode.BionicSwipePageFrame;component/Styles/BionicSwipePageStyle.xaml" />
+    <ResourceDictionary Source="/BionicCode.BionicSwipePageFrame;component/Styles/FrameHeaderStyle.xaml" />
+    <ResourceDictionary Source="/BionicCode.BionicSwipePageFrame;component/Styles/BionicSwipePageFrameStyle.xaml" />
+  </ResourceDictionary.MergedDictionaries>
+  <!--<Viewbox x:Key="ChevronRightIcon"
            Stretch="Uniform"
            x:Shared="False"
            UseLayoutRounding="True">
     <Canvas Width="542.900024414063"
             Height="980">
-      <!--<Canvas />-->
+      --><!--<Canvas />--><!--
       <Path Fill="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Control}, Path=Foreground}"
             StrokeThickness="1"
             Data="F1M437,490L0,927 53,980 542.9,490 53.1,0 0.100000000000023,53 437,490z" />
     </Canvas>
-  </Viewbox>
+  </Viewbox>-->
 
-  <Style x:Key="{x:Static local:BionicSwipePageFrameHeader.ButtonStyleKey}" TargetType="Button">
-    <Setter Property="OverridesDefaultStyle"
-            Value="True" />
-    <Setter Property="SnapsToDevicePixels"
-            Value="True" />
-    <Setter Property="BorderThickness"
-            Value="1" />
-    <Setter Property="BorderBrush"
-            Value="Transparent" />
-    <Setter Property="Background"
-            Value="Transparent" />
-    <Setter Property="Foreground"
-            Value="Black" />
-    <Setter Property="Height"
-            Value="32" />
-    <Setter Property="Width"
-            Value="40" />
-    <Setter Property="VerticalContentAlignment"
-            Value="Center" />
-    <Setter Property="HorizontalContentAlignment"
-            Value="Center" />
-    <Setter Property="FocusVisualStyle"
-            Value="{x:Null}" />
-    <Setter Property="Padding"
-            Value="4" />
-    <Setter Property="Template">
-      <Setter.Value>
-        <ControlTemplate TargetType="Button">
-          <Border BorderThickness="{TemplateBinding BorderThickness}"
-                  BorderBrush="{TemplateBinding BorderBrush}"
-                  Background="{TemplateBinding Background}"
-                  Padding="{TemplateBinding Padding}">
-            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+  
+  
 
-          </Border>
-          <ControlTemplate.Triggers>
-            <Trigger Property="IsMouseOver"
-                     Value="True">
-              <Setter Property="Background"
-                      Value="DarkGray" />
-              <Setter Property="Foreground"
-                      Value="White" />
-              <Setter Property="BorderBrush"
-                      Value="LightGray" />
-            </Trigger>
-            <Trigger Property="IsPressed"
-                     Value="True">
-              <Setter Property="Background"
-                      Value="LightGray" />
-              <Setter Property="Foreground"
-                      Value="Black" />
-              <Setter Property="BorderBrush"
-                      Value="Black" />
-            </Trigger>
-          </ControlTemplate.Triggers>
-        </ControlTemplate>
-      </Setter.Value>
-    </Setter>
-  </Style>
+  
 
-  <Style TargetType="{x:Type local:BionicSwipePage}">
-    <Setter Property="SnapsToDevicePixels"
-            Value="True" />
-    <Setter Property="BorderThickness"
-            Value="0" />
-    <Setter Property="BorderBrush"
-            Value="Transparent" />
-    <Setter Property="Background"
-            Value="Transparent" />
-    <Setter Property="FocusVisualStyle"
-            Value="{x:Null}" />
-    <Setter Property="Template">
-      <Setter.Value>
-        <ControlTemplate TargetType="{x:Type local:BionicSwipePage}">
-          <Border Background="{TemplateBinding Background}"
-                  BorderBrush="{TemplateBinding BorderBrush}"
-                  BorderThickness="{TemplateBinding BorderThickness}">
-            <ScrollViewer Height="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=local:BionicSwipePageFrame}, Path=lHeight}"
-                          Width="{Binding RelativeSource={RelativeSource FindAncestor,AncestorType=local:BionicSwipePageFrame}, Path=Width}" HorizontalScrollBarVisibility="Auto">
-              <ContentPresenter /></ScrollViewer>
-          </Border>
-        </ControlTemplate>
-      </Setter.Value>
-    </Setter>
-  </Style>
+  
 
-  <Style TargetType="{x:Type local:BionicSwipePageFrame}">
-    <Style.Resources>
-      <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
-      <converter:ControlWidthTranslationStartPositionConverter x:Key="ControlWidthTranslationStartPositionConverter" />
-    </Style.Resources>
-    <Setter Property="SnapsToDevicePixels"
-            Value="True" />
-    <Setter Property="BorderThickness"
-            Value="0" />
-    <Setter Property="BorderBrush"
-            Value="Transparent" />
-    <Setter Property="Background"
-            Value="Transparent" />
-    <Setter Property="FocusVisualStyle"
-            Value="{x:Null}" />
-    <Setter Property="Template">
-      <Setter.Value>
-        <ControlTemplate TargetType="{x:Type local:BionicSwipePageFrame}">
-          <Border Background="{TemplateBinding Background}"
-                  BorderBrush="{TemplateBinding BorderBrush}"
-                  BorderThickness="{TemplateBinding BorderThickness}"
-                  Padding="{TemplateBinding Padding}">
-            <DockPanel LastChildFill="True" >
-              <local:BionicSwipePageFrameHeader x:Name="PART_PageHeader" DockPanel.Dock="Top" />
-
-              <Grid x:Name="PART_PageHostPanel" DockPanel.Dock="Top">
-                  <ContentPresenter x:Name="PART_SelectedPageHost"
-                                    ContentSource="SelectedPage" />
-              </Grid>
-            </DockPanel>
-          </Border>
-        </ControlTemplate>
-      </Setter.Value>
-    </Setter>
-  </Style>
-
-  <Style TargetType="{x:Type local:BionicSwipePageFrameHeader}">
-    <Setter Property="SnapsToDevicePixels"
-            Value="True" />
-    <Setter Property="IconHeight"
-            Value="36" />
-    <Setter Property="IconWidth"
-            Value="Auto" />
-    <Setter Property="Padding"
-            Value="0" />
-    <Setter Property="BorderThickness"
-            Value="0" />
-    <Setter Property="BorderBrush"
-            Value="Transparent" />
-    <Setter Property="Background"
-            Value="Transparent" />
-    <Setter Property="FontSize"
-            Value="24" />
-    <Setter Property="FontStretch"
-            Value="UltraExpanded" />
-    <Setter Property="FontWeight"
-            Value="UltraLight" />
-    <Setter Property="VerticalContentAlignment"
-            Value="Center" />
-    <Setter Property="HorizontalContentAlignment"
-            Value="Center" />
-    <Setter Property="Template">
-      <Setter.Value>
-        <ControlTemplate TargetType="{x:Type local:BionicSwipePageFrameHeader}">
-          <Border Background="{TemplateBinding Background}"
-                  BorderBrush="{TemplateBinding BorderBrush}"
-                  BorderThickness="{TemplateBinding BorderThickness}"
-                  Padding="{TemplateBinding Padding}">
-            <Grid>
-              <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="Auto" />
-              </Grid.ColumnDefinitions>
-              <Button Grid.Column="0" 
-                      Content="{StaticResource ChevronRightIcon}"
-                      Command="{x:Static local:BionicSwipePageFrame.LoadPreviousPageRoutedCommand}"
-                      Style="{StaticResource {x:Static local:BionicSwipePageFrameHeader.ButtonStyleKey}}" HorizontalAlignment="Left">
-                <Button.RenderTransform>
-                  <RotateTransform Angle="180" CenterX="20" CenterY="16" />
-                </Button.RenderTransform>
-              </Button>
-              <Grid x:Name="PART_PageHeaderTitleHostPanel" Grid.Column="1" >
-                <ContentPresenter x:Name="PART_Title"
-                         Visibility="Collapsed"
-                                  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}">
-                  <ContentPresenter.ContentTemplateSelector>
-                    <local:FrameHeaderTitleDataTemplateSelector>
-                      <local:FrameHeaderTitleDataTemplateSelector.TextTemplate>
-                        <DataTemplate DataType="system:String">
-                          <TextBlock Text="{Binding}"
-                                     FontStretch="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=local:BionicSwipePageFrameHeader}, Path=FontStretch}"
-                                     FontWeight="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=local:BionicSwipePageFrameHeader}, Path=FontWeight}"
-                                     FontSize="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=local:BionicSwipePageFrameHeader}, Path=FontSize}"
-                                     TextTrimming="CharacterEllipsis"
-                                     TextWrapping="NoWrap" />
-                        </DataTemplate>
-                      </local:FrameHeaderTitleDataTemplateSelector.TextTemplate> <local:FrameHeaderTitleDataTemplateSelector.ImageSourceTemplate>
-                        <DataTemplate DataType="system:String">
-                          <Viewbox Height="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=local:BionicSwipePageFrameHeader}, Path=IconHeight}"
-                                   Width="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=local:BionicSwipePageFrameHeader}, Path=IconWidth}">
-                            <Image Source="{Binding}" />
-                          </Viewbox>
-                        </DataTemplate>
-                      </local:FrameHeaderTitleDataTemplateSelector.ImageSourceTemplate>
-                      <local:FrameHeaderTitleDataTemplateSelector.ObjectTemplate>
-                        <DataTemplate>
-                          <ContentControl Content="{Binding}"
-                                          FontStretch="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=local:BionicSwipePageFrameHeader}, Path=FontStretch}"
-                                          FontWeight="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=local:BionicSwipePageFrameHeader}, Path=FontWeight}"
-                                          FontSize="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=local:BionicSwipePageFrameHeader}, Path=FontSize}" />
-                        </DataTemplate>
-                      </local:FrameHeaderTitleDataTemplateSelector.ObjectTemplate>
-                    </local:FrameHeaderTitleDataTemplateSelector>
-                  </ContentPresenter.ContentTemplateSelector>
-                </ContentPresenter>
-              </Grid>
-              <Button Grid.Column="2"
-                      Content="{StaticResource ChevronRightIcon}"
-                      Command="{x:Static local:BionicSwipePageFrame.LoadNextPageRoutedCommand}"
-                      Style="{StaticResource {x:Static local:BionicSwipePageFrameHeader.ButtonStyleKey}}" />
-            </Grid>
-          </Border>
-        </ControlTemplate>
-      </Setter.Value>
-    </Setter>
-  </Style>
+  
 </ResourceDictionary>

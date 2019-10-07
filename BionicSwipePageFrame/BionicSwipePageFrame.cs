@@ -19,7 +19,7 @@ namespace BionicCode.BionicSwipePageFrame
   /// <see cref="BionicSwipePageFrame"/> derives from <see cref="Selector"/> which is a <see cref="ItemsControl"/>. The <see cref="ItemsControl.ItemsPanel"/> property is ignored.<br/><br/>
   ///
   /// 
-  /// If the <see cref="ItemsControl.ItemsSource"/> contains different data types use the <see cref="ItemsControl.ItemTemplateSelector"/> property to assign a <see cref="DataTemplateSelector"/> that maps the appropriate <see cref="DataTemplate"/> to the items. <br/>
+  /// If the <see cref="ItemsControl.ItemsSource"/> contains different data types use the <see cref="ItemsControl.ItemTemplateSelector"/> property to assign a <see cref="TitleDataTemplateSelector"/> that maps the appropriate <see cref="DataTemplate"/> to the items. <br/>
   /// The <see cref="BionicSwipePageFrame"/> uses <see cref="BionicSwipePage"/> as container for the data items.<br/>
   /// The control uses semi-virtualization which means item containers are lazy generated once they are requested for display, but never destroyed. Full virtualization support is not implemented yet. <br/><br/>
   /// When <see cref="IsLoopingPagesEnabled"/> is set to <c>True</c>, index values assigned to <see cref="Selector.SelectedIndex"/> property or to the <see cref="ICommandSource.CommandParameter"/> of <see cref="LoadPageFromIndexRoutedCommand"/> are treated special. An index greater than the count of the <see cref="ItemsControl.ItemsSource"/> is coerced to point to the first item in the collection. Similarly an index value lesser than zero will point to the last page item (wrapping). <br/>
@@ -37,7 +37,7 @@ namespace BionicCode.BionicSwipePageFrame
   /// </example>
   [StyleTypedProperty(Property = "ItemContainerStyle", StyleTargetType = typeof(BionicSwipePage))]
   [TemplatePart(Name = "PART_SelectedPageHost", Type = typeof(ContentPresenter))]
-  [TemplatePart(Name = "PART_PageHeader", Type = typeof(FrameworkElement))]
+  [TemplatePart(Name = "PART_PageHeader", Type = typeof(BionicSwipePageFrameHeader))]
   [TemplatePart(Name = "PART_PageHostPanel", Type = typeof(Panel))]
   public class BionicSwipePageFrame : Selector
   {
@@ -397,15 +397,39 @@ namespace BionicCode.BionicSwipePageFrame
       set => SetValue(BionicSwipePageFrame.TitleMemberPathProperty, value);
     }
 
+    public static readonly DependencyProperty TitleTemplateProperty = DependencyProperty.Register(
+      "TitleTemplate",
+      typeof(DataTemplate),
+      typeof(BionicSwipePageFrame),
+      new PropertyMetadata(default(DataTemplate), BionicSwipePageFrame.OnTitleTemplateChanged));
+
+    public DataTemplate TitleTemplate
+    {
+      get => (DataTemplate) GetValue(BionicSwipePageFrame.TitleTemplateProperty);
+      set => SetValue(BionicSwipePageFrame.TitleTemplateProperty, value);
+    }
+
+    public static readonly DependencyProperty TitleDataTemplateSelectorProperty = DependencyProperty.Register(
+      "TitleDataTemplateSelector",
+      typeof(DataTemplateSelector),
+      typeof(BionicSwipePageFrame),
+      new PropertyMetadata(default(DataTemplateSelector), BionicSwipePageFrame.OnTitleDataTemplateSelectorChanged));
+
+    public DataTemplateSelector TitleDataTemplateSelector
+    {
+      get => (DataTemplateSelector) GetValue(BionicSwipePageFrame.TitleDataTemplateSelectorProperty);
+      set => SetValue(BionicSwipePageFrame.TitleDataTemplateSelectorProperty, value);
+    }
+
     #endregion
-    
+
     static BionicSwipePageFrame()
     {
       FrameworkElement.DefaultStyleKeyProperty.OverrideMetadata(
         typeof(BionicSwipePageFrame),
         new FrameworkPropertyMetadata(typeof(BionicSwipePageFrame)));
       KeyboardNavigation.DirectionalNavigationProperty.OverrideMetadata(
-        typeof(TabControl),
+        typeof(BionicSwipePageFrame),
         new FrameworkPropertyMetadata(KeyboardNavigationMode.Contained));
       Selector.SelectedIndexProperty.OverrideMetadata(typeof(BionicSwipePageFrame), new FrameworkPropertyMetadata(0, BionicSwipePageFrame.OnSelectedIndexChanged, BionicSwipePageFrame.CoerceSelectedIndex));
       Selector.SelectedItemProperty.OverrideMetadata(typeof(BionicSwipePageFrame), new FrameworkPropertyMetadata(null, BionicSwipePageFrame.OnSelectedItemChanged, BionicSwipePageFrame.CoerceSelectedItem));
@@ -438,6 +462,22 @@ namespace BionicCode.BionicSwipePageFrame
       this.SelectedItemChanged += OnSelectedItemChanged;
       this.SelectedIndexChanging += OnSelectedIndexChanging;
       this.SelectedIndexChanged += OnSelectedIndexChanged;
+
+      this.Loaded += Initialize;
+    }
+
+    private void Initialize(object sender, RoutedEventArgs e)
+    {
+      InitializePageHeaderPart();
+      InitializeAnimatedElements();
+      var pageContentBinding = new Binding()
+      {
+        Source = this,
+        Path = new PropertyPath(nameof(this.SelectedPage))
+      };
+      this.PART_SelectedPageHost.SetBinding(ContentPresenter.ContentProperty, pageContentBinding);
+      this.SelectedIndex = 0;
+      UpdateSelectedPage();
     }
 
     private static void OnTitleMemberPathChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
@@ -463,6 +503,24 @@ namespace BionicCode.BionicSwipePageFrame
       }
 
       _this.PART_PageHeader.Visibility = (bool)e.NewValue ? Visibility.Visible : Visibility.Collapsed;
+    }
+
+    private static void OnTitleDataTemplateSelectorChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+    {
+      var _this = (d as BionicSwipePageFrame);
+      if (_this.PART_PageHeader != null)
+      {
+        _this.PART_PageHeader.TitleDataTemplateSelector = e.NewValue as DataTemplateSelector;
+      }
+    }
+
+    private static void OnTitleTemplateChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+    {
+      var _this = (d as BionicSwipePageFrame);
+      if (_this.PART_PageHeader != null)
+      {
+        _this.PART_PageHeader.TitleTemplate = e.NewValue as DataTemplate;
+      }
     }
 
     private static object CoerceSelectedIndex(DependencyObject d, object basevalue)
@@ -663,11 +721,9 @@ namespace BionicCode.BionicSwipePageFrame
     {
       base.OnApplyTemplate();
       this.PART_PageHeader = GetTemplateChild("PART_PageHeader") as BionicSwipePageFrameHeader;
-      InitializePageHeaderPart();
       this.PART_PageHostPanel = GetTemplateChild("PART_PageHostPanel") as Panel;
       this.PART_SelectedPageHost = GetTemplateChild("PART_SelectedPageHost") as ContentPresenter;
       this.PART_SelectedPageHost.Visibility = Visibility.Visible;
-      InitializeAnimatedElements();
 
       this.IsInitialized = true;
     }
@@ -732,9 +788,21 @@ namespace BionicCode.BionicSwipePageFrame
 
     private void InitializePageHeaderPart()
     {
-      this.PART_PageHeader.Style = this.FrameHeaderStyle;
-      this.PART_PageHeader.ApplyTemplate();
-      this.PART_PageHeader.PART_Title.RenderTransform = new TranslateTransform();
+      if (this.PART_PageHeader.Style == null && this.FrameHeaderStyle != null)
+      {
+        this.PART_PageHeader.Style = this.FrameHeaderStyle;
+      }
+
+      if (this.PART_PageHeader.TitleDataTemplateSelector == null)
+      {
+        this.PART_PageHeader.TitleDataTemplateSelector = this.TitleDataTemplateSelector;
+      }
+
+      if (this.PART_PageHeader.TitleTemplate == null && this.TitleTemplate != null)
+      {
+        this.PART_PageHeader.TitleTemplate = this.TitleTemplate;
+      }
+
       UpdateFrameTitleFromTitleMemberPath();
       this.PART_PageHeader.Visibility = this.IsHeaderVisible ? Visibility.Visible : Visibility.Collapsed;
     }
@@ -895,21 +963,11 @@ namespace BionicCode.BionicSwipePageFrame
     /// <inheritdoc />
     protected override bool IsItemItsOwnContainerOverride(object item) => item is BionicSwipePage;
 
-    /// <summary>
-    ///     This virtual method in called when IsInitialized is set to true and it raises an Initialized event
-    /// </summary>
-    protected override void OnInitialized(EventArgs e)
-    {
-      base.OnInitialized(e);
-      this.SelectedIndex = 0;
-      UpdateSelectedPage();
-    }
-
     #endregion
 
     private void UpdateFrameTitleFromTitleMemberPath()
     {
-      if (this.PART_PageHeader?.PART_Title == null)
+      if (this.PART_PageHeader == null)
       {
         return;
       }
@@ -925,7 +983,7 @@ namespace BionicCode.BionicSwipePageFrame
         Source = this,
         Path = new PropertyPath(nameof(this.SelectedItem) + "." + this.TitleMemberPath)
       };
-      this.PART_PageHeader.PART_Title.SetBinding(ContentPresenter.ContentProperty, binding);
+      this.PART_PageHeader.PART_Title.SetBinding(ContentControl.ContentProperty, binding);
       this.PART_PageHeader.PART_Title.Visibility = Visibility.Visible;
     }
 
@@ -990,7 +1048,7 @@ namespace BionicCode.BionicSwipePageFrame
 
     private BionicSwipePage GetPageContainerAt(int pageIndex)
     {
-      // Check if the selected item is a TabItem
+      // Check if the selected item is a BionicSwipePage (when added through XAML)
       var pageContainer = this.SelectedItem as BionicSwipePage;
       if (pageContainer == null)
       {

@@ -2,49 +2,55 @@
 <HelpTOC>
 
   <HelpTOCNode Title="Welcome to the [TODO: Add project name]" Url="html/05c0ebdc-c4e5-44b9-9000-bb49cd2a96f4.htm" />
-  <HelpTOCNode Id="fb0743ff-1092-4f63-820d-633fae06a038" Title="Version History" Url="html/03fa0d3b-3048-45a8-9258-1319427d0ece.htm">
+  <HelpTOCNode Id="39cb8863-20fe-4b29-bd1a-47ccefe22343" Title="Version History" Url="html/03fa0d3b-3048-45a8-9258-1319427d0ece.htm">
     <HelpTOCNode Title="Version 1.0.0.0" Url="html/b1dcd274-1881-4e09-a663-93fb067c8d0f.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="15c7ca86-4faf-44fb-9670-432b14513d5d" Title="BionicCode.BionicSwipePageFrame" Url="html/f3b7c3fb-71ed-9ef2-f5fc-f1dcf0aed930.htm">
-    <HelpTOCNode Id="5a649fc2-19fa-4ec6-a387-6e4d48f623fc" Title="BionicSwipePage Class" Url="html/bde4762c-f935-e04a-8786-3c9a079015b9.htm">
+  <HelpTOCNode Id="b9fb9c21-659d-4105-975c-dec2a467dfe6" Title="BionicCode.BionicSwipePageFrame" Url="html/f3b7c3fb-71ed-9ef2-f5fc-f1dcf0aed930.htm">
+    <HelpTOCNode Id="edb83e31-67df-4f8f-bf4b-78afeb8d3c5c" Title="BionicSwipePage Class" Url="html/bde4762c-f935-e04a-8786-3c9a079015b9.htm">
       <HelpTOCNode Title="BionicSwipePage Constructor " Url="html/65ce1dfe-e365-a4fa-3a24-2c6c85685a13.htm" />
       <HelpTOCNode Title="BionicSwipePage Properties" Url="html/d28e8542-472f-a45a-09cb-f39a16e5ab74.htm" />
       <HelpTOCNode Title="BionicSwipePage Methods" Url="html/de42b692-7b25-1fca-ce5a-14058ef03939.htm" />
       <HelpTOCNode Title="BionicSwipePage Events" Url="html/9490be6d-d9ba-f2dc-57df-0e66f7f94aa2.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="6ea2b753-1d3f-4b69-80af-d82943dc7f64" Title="BionicSwipePageFrame Class" Url="html/5e278d44-af22-fda9-588d-ab87c168797b.htm">
+    <HelpTOCNode Id="feaf2930-8863-44c7-9255-1e57009d15d8" Title="BionicSwipePageFrame Class" Url="html/5e278d44-af22-fda9-588d-ab87c168797b.htm">
       <HelpTOCNode Title="BionicSwipePageFrame Constructor " Url="html/96d552e7-77af-1f71-b7fa-27d43188cbb1.htm" />
-      <HelpTOCNode Id="e9c6acb5-17c9-49e9-bd2b-6faf036a0390" Title="BionicSwipePageFrame Properties" Url="html/32cfa380-e805-f14c-9ed6-ae8e0673cbf1.htm">
+      <HelpTOCNode Id="6a7b2f30-3a3f-47c9-8566-eb916881ebe1" Title="BionicSwipePageFrame Properties" Url="html/32cfa380-e805-f14c-9ed6-ae8e0673cbf1.htm">
         <HelpTOCNode Title="FrameHeaderStyle Property " Url="html/698623ca-4373-af87-ce0b-0d8bc4449287.htm" />
         <HelpTOCNode Title="IsHeaderVisible Property " Url="html/07ca7423-85ce-c710-2a07-a0fd3b096e95.htm" />
         <HelpTOCNode Title="IsLoopingPagesEnabled Property " Url="html/1ea9587c-dccd-2a31-49b3-3f09f0533d72.htm" />
         <HelpTOCNode Title="NavigationDirection Property " Url="html/5e97fd22-3446-d57b-7495-1fc4b6051f4e.htm" />
         <HelpTOCNode Title="PreviousPage Property " Url="html/d13f60bb-12ec-dccc-ff68-12ea92a31a5b.htm" />
-        <HelpTOCNode Title="PreviousPageTranslationEndPosition Property " Url="html/f8692572-0a41-0f7a-1916-21daae1c6076.htm" />
-        <HelpTOCNode Title="PreviousPageTranslationStartPosition Property " Url="html/adff6825-615e-dbec-7fc1-d1cc5a2c9cd0.htm" />
         <HelpTOCNode Title="PreviousSelectedIndex Property " Url="html/440a517d-eb41-5cdd-4d6b-dec331bb49cc.htm" />
         <HelpTOCNode Title="SelectedPage Property " Url="html/c6ce4ab8-463a-169b-5aef-35d553649bdc.htm" />
-        <HelpTOCNode Title="SelectedPageTranslationEndPosition Property " Url="html/aad338a1-0cfe-8fc5-4f6b-9119eb25aa60.htm" />
-        <HelpTOCNode Title="SelectedPageTranslationStartPosition Property " Url="html/3f0d07a4-14a4-82b0-8389-10688e472bec.htm" />
         <HelpTOCNode Title="TitleMemberPath Property " Url="html/2ae94a5a-66d6-e23a-17b1-c60cdee5357a.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="1d9d8dc1-8af6-4db3-9ec1-ff6efda9e335" Title="BionicSwipePageFrame Methods" Url="html/a96d577c-cedf-5c2b-f9c3-514e52684c5e.htm">
+      <HelpTOCNode Id="4736cac5-3443-4e46-8d02-38409c1c546d" Title="BionicSwipePageFrame Methods" Url="html/a96d577c-cedf-5c2b-f9c3-514e52684c5e.htm">
         <HelpTOCNode Title="GetContainerForItemOverride Method " Url="html/ba8c48c5-6083-dee8-4da6-026dd3af4360.htm" />
         <HelpTOCNode Title="IsItemItsOwnContainerOverride Method " Url="html/d4a4426c-1045-b798-aa2a-abae5efb2ae8.htm" />
         <HelpTOCNode Title="OnApplyTemplate Method " Url="html/a3f95102-0a0d-313a-8c2f-97ca30f2c6c9.htm" />
         <HelpTOCNode Title="OnInitialized Method " Url="html/5fa860ae-3b1a-2932-42d8-1ae191c9f729.htm" />
         <HelpTOCNode Title="OnNavigationDirectionChanged Method " Url="html/03fbc77e-4f04-74c9-bfa9-e1a12c925f68.htm" />
         <HelpTOCNode Title="OnPageChanged Method " Url="html/6ba2b971-98a6-d86a-f76d-8d1d18d88f34.htm" />
-        <HelpTOCNode Title="OnPreviewPageChanged Method " Url="html/ca29feb1-dc61-de1b-07a1-c223437f9a67.htm" />
         <HelpTOCNode Title="OnPreviousPageChanged Method " Url="html/df23c9a9-7e95-73cb-8e73-8ae870052009.htm" />
-        <HelpTOCNode Title="OnSelectedIndexChanged Method " Url="html/a770d751-a539-4448-2e21-ac2ab98a3a09.htm" />
+        <HelpTOCNode Title="OnSelectedIndexChanged Method " Url="html/e80ba763-cab2-0c00-c177-fecb8e594f1f.htm" />
+        <HelpTOCNode Title="OnSelectedIndexChanging Method " Url="html/eec46148-c4ff-8457-7a1c-372d7a7c0a25.htm" />
+        <HelpTOCNode Title="OnSelectedItemChanged Method " Url="html/11bec0bc-485a-da2c-56d5-9c13c1e4cc60.htm" />
+        <HelpTOCNode Title="OnSelectedItemChanging Method " Url="html/2e2058f7-6c46-52ca-8535-84cbf2a48ee0.htm" />
         <HelpTOCNode Title="OnSelectedPageChanged Method " Url="html/4606cdc2-0a6a-123f-9ea9-42ff4e4bf3bf.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="42da07f4-8c59-4fae-a0f3-2fa06861115b" Title="BionicSwipePageFrame Events" Url="html/8ed9f3ea-2c63-e7e0-8b35-1b97264bdffe.htm">
+      <HelpTOCNode Id="7f7a251d-5276-4883-9ffe-5d60bae28da1" Title="BionicSwipePageFrame Events" Url="html/8ed9f3ea-2c63-e7e0-8b35-1b97264bdffe.htm">
         <HelpTOCNode Title="PageChanged Event" Url="html/feda15e8-30e4-8fe5-c82d-664537fd50ce.htm" />
         <HelpTOCNode Title="PreviewPageChanged Event" Url="html/0cb9b9c4-3b85-88c8-f4ae-3a5fac612db7.htm" />
+        <HelpTOCNode Title="PreviewSelectedIndexChanged Event" Url="html/52762556-cf5f-53c5-2576-95b4ebbc4967.htm" />
+        <HelpTOCNode Title="PreviewSelectedIndexChanging Event" Url="html/cb929dbc-bc81-24a5-fd00-acfbfda1f853.htm" />
+        <HelpTOCNode Title="PreviewSelectedItemChanged Event" Url="html/b8283dbb-463a-80cc-755e-8d929870753f.htm" />
+        <HelpTOCNode Title="PreviewSelectedItemChanging Event" Url="html/43bb113a-f974-a3ad-18f0-078370e4aa74.htm" />
+        <HelpTOCNode Title="SelectedIndexChanged Event" Url="html/4aa12d09-a3e0-f7c9-d0be-6ef37a010f7c.htm" />
+        <HelpTOCNode Title="SelectedIndexChanging Event" Url="html/ce84ba4e-1459-8eb6-f4f7-fe20f15e6157.htm" />
+        <HelpTOCNode Title="SelectedItemChanged Event" Url="html/e2cec176-fdb3-8514-027a-c17046581321.htm" />
+        <HelpTOCNode Title="SelectedItemChanging Event" Url="html/14859116-47ca-eceb-e637-c5184cdd0ac9.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="dafbb217-6639-4fbd-97e6-95ac9d956383" Title="BionicSwipePageFrame Fields" Url="html/ce36d6b8-ffe7-e701-f569-c77ad13601c9.htm">
+      <HelpTOCNode Id="081b62d3-6584-4665-9073-c6981de076e1" Title="BionicSwipePageFrame Fields" Url="html/ce36d6b8-ffe7-e701-f569-c77ad13601c9.htm">
         <HelpTOCNode Title="FrameHeaderStyleProperty Field" Url="html/c933f89d-99e0-67ee-9350-72001c85ecd3.htm" />
         <HelpTOCNode Title="IsHeaderVisibleProperty Field" Url="html/cf36a946-ac1c-622d-308e-a996e8929659.htm" />
         <HelpTOCNode Title="IsLoopingPagesEnabledProperty Field" Url="html/45416499-9542-beee-ecf2-585d7f99f046.htm" />
@@ -55,31 +61,45 @@
         <HelpTOCNode Title="NavigationDirectionProperty Field" Url="html/28045370-04f0-9288-6b9e-f07363cb0a8a.htm" />
         <HelpTOCNode Title="PageChangedRoutedEvent Field" Url="html/13bbbb7b-1bd7-7ebb-f8f5-9b8fa5a65e74.htm" />
         <HelpTOCNode Title="PreviewPageChangedRoutedEvent Field" Url="html/203cc980-aa3e-115a-fa84-b3b05dca6016.htm" />
+        <HelpTOCNode Title="PreviewSelectedIndexChangedRoutedEvent Field" Url="html/643b88e1-52b4-2733-e319-fa1feea10fe7.htm" />
+        <HelpTOCNode Title="PreviewSelectedIndexChangingRoutedEvent Field" Url="html/a84e5526-8c0f-53f7-43f8-60f3a5637aba.htm" />
+        <HelpTOCNode Title="PreviewSelectedItemChangedRoutedEvent Field" Url="html/0f5dfcee-d1d2-e522-f348-2cb0da10cff1.htm" />
+        <HelpTOCNode Title="PreviewSelectedItemChangingRoutedEvent Field" Url="html/79ac038a-80c0-dec6-637e-63c92197df9d.htm" />
         <HelpTOCNode Title="PreviousPageProperty Field" Url="html/3be4a304-24a7-b967-d9cd-0e74c0b53ce9.htm" />
-        <HelpTOCNode Title="PreviousPageTranslationEndPositionProperty Field" Url="html/d48419ce-4be9-4c25-7746-e94f0f926be4.htm" />
-        <HelpTOCNode Title="PreviousPageTranslationStartPositionProperty Field" Url="html/608fe4ae-4f93-2e82-7deb-69f62b9c7a1d.htm" />
         <HelpTOCNode Title="PreviousSelectedIndexProperty Field" Url="html/4799ba73-46da-6c29-bc84-1f7eeede362f.htm" />
+        <HelpTOCNode Title="SelectedIndexChangedRoutedEvent Field" Url="html/8fead39d-5728-682f-7dd0-072a840641ea.htm" />
+        <HelpTOCNode Title="SelectedIndexChangingRoutedEvent Field" Url="html/8006c248-9625-7124-7009-829a15b63396.htm" />
+        <HelpTOCNode Title="SelectedItemChangedRoutedEvent Field" Url="html/a73d8b34-89ce-dd51-cd46-e98f43788e05.htm" />
+        <HelpTOCNode Title="SelectedItemChangingRoutedEvent Field" Url="html/1b2fe2fd-d667-b0e6-bb15-ac588aac16a7.htm" />
         <HelpTOCNode Title="SelectedPageProperty Field" Url="html/5d583942-23cc-863f-266e-5633333ea581.htm" />
-        <HelpTOCNode Title="SelectedPageTranslationEndPositionProperty Field" Url="html/a65413df-427e-1197-9201-f99bec2c7a70.htm" />
-        <HelpTOCNode Title="SelectedPageTranslationStartPositionProperty Field" Url="html/85d8965e-e779-f879-dae3-8bc52fa9601e.htm" />
         <HelpTOCNode Title="TitleMemberPathProperty Field" Url="html/5d78cd0c-2f2c-e551-ab2d-dc2a49a8f840.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="020ba2e4-690c-43b2-9fbf-d2b9d05237ca" Title="BionicSwipePageFrameHeader Class" Url="html/9bd1c3a3-760d-8157-2cf4-f01175594bb8.htm">
+    <HelpTOCNode Id="e40619b3-a4e1-43a7-80c3-363e8b7e6351" Title="BionicSwipePageFrameHeader Class" Url="html/9bd1c3a3-760d-8157-2cf4-f01175594bb8.htm">
       <HelpTOCNode Title="BionicSwipePageFrameHeader Constructor " Url="html/613487e1-12a9-ae19-e61d-a7b11e9e0437.htm" />
-      <HelpTOCNode Title="BionicSwipePageFrameHeader Properties" Url="html/b31029f0-57fd-5256-dab3-5da426a4c80c.htm" />
-      <HelpTOCNode Title="BionicSwipePageFrameHeader Methods" Url="html/71aeddbc-e8c8-ceb6-d511-8cb14197557c.htm" />
+      <HelpTOCNode Id="8212e969-082a-44a6-9317-4046a6d71258" Title="BionicSwipePageFrameHeader Properties" Url="html/b31029f0-57fd-5256-dab3-5da426a4c80c.htm">
+        <HelpTOCNode Title="ButtonStyleKey Property " Url="html/452b6e31-4de2-cb20-7eef-12665cfc1d66.htm" />
+        <HelpTOCNode Title="IconHeight Property " Url="html/306ca271-ea8c-0a6e-3dd3-039ca5c6527a.htm" />
+        <HelpTOCNode Title="IconWidth Property " Url="html/91fc9585-f65e-4b63-c4dc-8199ea4e0c83.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="956c3c31-bf48-4355-8c0c-2ab3276a0ced" Title="BionicSwipePageFrameHeader Methods" Url="html/71aeddbc-e8c8-ceb6-d511-8cb14197557c.htm">
+        <HelpTOCNode Title="OnApplyTemplate Method " Url="html/68f041d6-2300-4e94-7f06-d0ee34bf4018.htm" />
+      </HelpTOCNode>
       <HelpTOCNode Title="BionicSwipePageFrameHeader Events" Url="html/aa1ad1a3-7d90-f57c-ab87-620cbc537593.htm" />
-    </HelpTOCNode>
-    <HelpTOCNode Title="PageNavigationDirection Enumeration" Url="html/368c4ff0-9878-748a-c7ee-5ed4c1ea0529.htm" />
-  </HelpTOCNode>
-  <HelpTOCNode Id="45c5bed0-e671-46c4-aef9-980db9db344b" Title="BionicCode.BionicSwipePageFrame.Converter" Url="html/0dfb264b-ae90-2cf7-6122-ac2a1ad2349d.htm">
-    <HelpTOCNode Id="2442cd4c-166d-45e4-8d9d-7537800e3231" Title="ControlWidthTranslationStartPositionConverter Class" Url="html/88cfae3b-83e6-0aaf-8462-66f71f5c6ebf.htm">
-      <HelpTOCNode Title="ControlWidthTranslationStartPositionConverter Constructor " Url="html/6c15bef5-9d13-852d-1d98-cf3cdece1ea3.htm" />
-      <HelpTOCNode Id="4b9d54cc-588e-4ab2-9bef-803d5b66476f" Title="ControlWidthTranslationStartPositionConverter Methods" Url="html/d0ecdbc7-b54f-bcc5-f643-a7f4bb183e8a.htm">
-        <HelpTOCNode Title="Convert Method " Url="html/1725aa67-7f5d-b15c-d3a5-5443f111806e.htm" />
-        <HelpTOCNode Title="ConvertBack Method " Url="html/6aa56030-1d25-82d7-7c67-a6deb249687d.htm" />
+      <HelpTOCNode Id="47e1344f-f47b-4b45-acfb-76e659869ef8" Title="BionicSwipePageFrameHeader Fields" Url="html/8e250fe6-a607-98dc-dd0a-71c5f2f55064.htm">
+        <HelpTOCNode Title="IconHeightProperty Field" Url="html/123cd0da-8f37-5d59-888f-80231e936af4.htm" />
+        <HelpTOCNode Title="IconWidthProperty Field" Url="html/d5c2d719-cfb8-2ae7-1613-e613505d813f.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
+    <HelpTOCNode Title="PageNavigationDirection Enumeration" Url="html/368c4ff0-9878-748a-c7ee-5ed4c1ea0529.htm" />
+    <HelpTOCNode Id="56bada43-2460-4272-9d44-b1020b888c04" Title="ValueChangedRoutedEventArgs(TValue) Class" Url="html/fec83261-e4fb-97a4-d802-1bd3e43effac.htm">
+      <HelpTOCNode Title="ValueChangedRoutedEventArgs(TValue) Constructor " Url="html/3e57631b-040e-de8b-b86f-28aed7b68d53.htm" />
+      <HelpTOCNode Id="61e40269-72e5-4def-b7de-ef3891b8148b" Title="ValueChangedRoutedEventArgs(TValue) Properties" Url="html/309eb2d2-1f50-63c6-4056-519cfedf5233.htm">
+        <HelpTOCNode Title="NewValue Property " Url="html/31356dc7-1cbe-8b98-1d25-70e29028032a.htm" />
+        <HelpTOCNode Title="OldValue Property " Url="html/4b164675-c5cd-d742-3dde-ead3025fd9a9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ValueChangedRoutedEventArgs(TValue) Methods" Url="html/22aff6c2-973c-3c0d-3900-d7497d029e13.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Title="ValueChangedRoutedEventHandler(TValue) Delegate" Url="html/5f0b2963-0e7e-1692-83c0-ebf5511c2f16.htm" />
   </HelpTOCNode>
 </HelpTOC>
