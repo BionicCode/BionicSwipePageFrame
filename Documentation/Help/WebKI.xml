@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="BionicCode.BionicSwipePageFrame namespace" Url="html/f3b7c3fb-71ed-9ef2-f5fc-f1dcf0aed930.htm" />
+  <HelpKINode Title="BionicCode.BionicSwipePageFrame.BionicSwipePage class" Url="html/bde4762c-f935-e04a-8786-3c9a079015b9.htm" />
+  <HelpKINode Title="BionicCode.BionicSwipePageFrame.BionicSwipePageFrame class" Url="html/5e278d44-af22-fda9-588d-ab87c168797b.htm" />
+  <HelpKINode Title="BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader class" Url="html/9bd1c3a3-760d-8157-2cf4-f01175594bb8.htm" />
+  <HelpKINode Title="BionicCode.BionicSwipePageFrame.PageNavigationDirection enumeration" Url="html/368c4ff0-9878-748a-c7ee-5ed4c1ea0529.htm" />
+  <HelpKINode Title="BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs(Of TValue) class" Url="html/fec83261-e4fb-97a4-d802-1bd3e43effac.htm" />
+  <HelpKINode Title="BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventArgs&lt;TValue&gt; class" Url="html/fec83261-e4fb-97a4-d802-1bd3e43effac.htm" />
+  <HelpKINode Title="BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventHandler(Of TValue) delegate" Url="html/5f0b2963-0e7e-1692-83c0-ebf5511c2f16.htm" />
+  <HelpKINode Title="BionicCode.BionicSwipePageFrame.ValueChangedRoutedEventHandler&lt;TValue&gt; delegate" Url="html/5f0b2963-0e7e-1692-83c0-ebf5511c2f16.htm" />
+  <HelpKINode Title="BionicSwipePage class">
+    <HelpKINode Title="BionicSwipePage Class" Url="html/bde4762c-f935-e04a-8786-3c9a079015b9.htm" />
+    <HelpKINode Title="constructor" Url="html/65ce1dfe-e365-a4fa-3a24-2c6c85685a13.htm" />
+    <HelpKINode Title="events" Url="html/9490be6d-d9ba-f2dc-57df-0e66f7f94aa2.htm" />
+    <HelpKINode Title="methods" Url="html/de42b692-7b25-1fca-ce5a-14058ef03939.htm" />
+    <HelpKINode Title="properties" Url="html/d28e8542-472f-a45a-09cb-f39a16e5ab74.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BionicSwipePage.BionicSwipePage constructor" Url="html/65ce1dfe-e365-a4fa-3a24-2c6c85685a13.htm" />
+  <HelpKINode Title="BionicSwipePageFrame class">
+    <HelpKINode Title="BionicSwipePageFrame Class" Url="html/5e278d44-af22-fda9-588d-ab87c168797b.htm" />
+    <HelpKINode Title="constructor" Url="html/96d552e7-77af-1f71-b7fa-27d43188cbb1.htm" />
+    <HelpKINode Title="events" Url="html/8ed9f3ea-2c63-e7e0-8b35-1b97264bdffe.htm" />
+    <HelpKINode Title="fields" Url="html/ce36d6b8-ffe7-e701-f569-c77ad13601c9.htm" />
+    <HelpKINode Title="methods" Url="html/a96d577c-cedf-5c2b-f9c3-514e52684c5e.htm" />
+    <HelpKINode Title="properties" Url="html/32cfa380-e805-f14c-9ed6-ae8e0673cbf1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BionicSwipePageFrame.BionicSwipePageFrame constructor" Url="html/96d552e7-77af-1f71-b7fa-27d43188cbb1.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.FrameHeaderStyle property" Url="html/698623ca-4373-af87-ce0b-0d8bc4449287.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.FrameHeaderStyleProperty field" Url="html/c933f89d-99e0-67ee-9350-72001c85ecd3.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.GetContainerForItemOverride method" Url="html/ba8c48c5-6083-dee8-4da6-026dd3af4360.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.IsHeaderVisible property" Url="html/07ca7423-85ce-c710-2a07-a0fd3b096e95.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.IsHeaderVisibleProperty field" Url="html/cf36a946-ac1c-622d-308e-a996e8929659.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.IsItemItsOwnContainerOverride method" Url="html/d4a4426c-1045-b798-aa2a-abae5efb2ae8.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.IsLoopingPagesEnabled property" Url="html/1ea9587c-dccd-2a31-49b3-3f09f0533d72.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.IsLoopingPagesEnabledProperty field" Url="html/45416499-9542-beee-ecf2-585d7f99f046.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.LoadNextPageRoutedCommand field" Url="html/8b688eeb-a141-1809-f8b0-ccd668e69ca6.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.LoadPageFromIndexRoutedCommand field" Url="html/e7a0383b-29e3-3765-4ead-a67e34aa384b.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.LoadPageFromItemRoutedCommand field" Url="html/b66f65e6-cf96-ba9b-bbbb-209d93c20cdf.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.LoadPreviousPageRoutedCommand field" Url="html/980a7dd5-8340-0ab4-4cf3-16c4e5657554.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.NavigationDirection property" Url="html/5e97fd22-3446-d57b-7495-1fc4b6051f4e.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.NavigationDirectionProperty field" Url="html/28045370-04f0-9288-6b9e-f07363cb0a8a.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.OnApplyTemplate method" Url="html/a3f95102-0a0d-313a-8c2f-97ca30f2c6c9.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.OnNavigationDirectionChanged method" Url="html/03fbc77e-4f04-74c9-bfa9-e1a12c925f68.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.OnPageChanged method" Url="html/6ba2b971-98a6-d86a-f76d-8d1d18d88f34.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.OnPreviousPageChanged method" Url="html/df23c9a9-7e95-73cb-8e73-8ae870052009.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.OnSelectedIndexChanged method" Url="html/e80ba763-cab2-0c00-c177-fecb8e594f1f.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.OnSelectedIndexChanging method" Url="html/eec46148-c4ff-8457-7a1c-372d7a7c0a25.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.OnSelectedItemChanged method" Url="html/11bec0bc-485a-da2c-56d5-9c13c1e4cc60.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.OnSelectedItemChanging method" Url="html/2e2058f7-6c46-52ca-8535-84cbf2a48ee0.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.OnSelectedPageChanged method" Url="html/4606cdc2-0a6a-123f-9ea9-42ff4e4bf3bf.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.PageChanged event" Url="html/feda15e8-30e4-8fe5-c82d-664537fd50ce.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.PageChangedRoutedEvent field" Url="html/13bbbb7b-1bd7-7ebb-f8f5-9b8fa5a65e74.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.PreviewPageChanged event" Url="html/0cb9b9c4-3b85-88c8-f4ae-3a5fac612db7.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.PreviewPageChangedRoutedEvent field" Url="html/203cc980-aa3e-115a-fa84-b3b05dca6016.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.PreviewSelectedIndexChanged event" Url="html/52762556-cf5f-53c5-2576-95b4ebbc4967.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.PreviewSelectedIndexChangedRoutedEvent field" Url="html/643b88e1-52b4-2733-e319-fa1feea10fe7.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.PreviewSelectedIndexChanging event" Url="html/cb929dbc-bc81-24a5-fd00-acfbfda1f853.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.PreviewSelectedIndexChangingRoutedEvent field" Url="html/a84e5526-8c0f-53f7-43f8-60f3a5637aba.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.PreviewSelectedItemChanged event" Url="html/b8283dbb-463a-80cc-755e-8d929870753f.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.PreviewSelectedItemChangedRoutedEvent field" Url="html/0f5dfcee-d1d2-e522-f348-2cb0da10cff1.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.PreviewSelectedItemChanging event" Url="html/43bb113a-f974-a3ad-18f0-078370e4aa74.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.PreviewSelectedItemChangingRoutedEvent field" Url="html/79ac038a-80c0-dec6-637e-63c92197df9d.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.PreviousPage property" Url="html/d13f60bb-12ec-dccc-ff68-12ea92a31a5b.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.PreviousPageProperty field" Url="html/3be4a304-24a7-b967-d9cd-0e74c0b53ce9.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.PreviousSelectedIndex property" Url="html/440a517d-eb41-5cdd-4d6b-dec331bb49cc.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.PreviousSelectedIndexProperty field" Url="html/4799ba73-46da-6c29-bc84-1f7eeede362f.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.SelectedIndexChanged event" Url="html/4aa12d09-a3e0-f7c9-d0be-6ef37a010f7c.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.SelectedIndexChangedRoutedEvent field" Url="html/8fead39d-5728-682f-7dd0-072a840641ea.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.SelectedIndexChanging event" Url="html/ce84ba4e-1459-8eb6-f4f7-fe20f15e6157.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.SelectedIndexChangingRoutedEvent field" Url="html/8006c248-9625-7124-7009-829a15b63396.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.SelectedItemChanged event" Url="html/e2cec176-fdb3-8514-027a-c17046581321.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.SelectedItemChangedRoutedEvent field" Url="html/a73d8b34-89ce-dd51-cd46-e98f43788e05.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.SelectedItemChanging event" Url="html/14859116-47ca-eceb-e637-c5184cdd0ac9.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.SelectedItemChangingRoutedEvent field" Url="html/1b2fe2fd-d667-b0e6-bb15-ac588aac16a7.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.SelectedPage property" Url="html/c6ce4ab8-463a-169b-5aef-35d553649bdc.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.SelectedPageProperty field" Url="html/5d583942-23cc-863f-266e-5633333ea581.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.TitleDataTemplateSelector property" Url="html/0518c8de-dd11-c923-16b8-1b4d3b3e0514.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.TitleDataTemplateSelectorProperty field" Url="html/4eb70975-5219-71b3-c858-88b1bcae6c73.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.TitleMemberPath property" Url="html/2ae94a5a-66d6-e23a-17b1-c60cdee5357a.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.TitleMemberPathProperty field" Url="html/5d78cd0c-2f2c-e551-ab2d-dc2a49a8f840.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.TitleTemplate property" Url="html/595be176-708d-02a2-022f-9f63c2651e7f.htm" />
+  <HelpKINode Title="BionicSwipePageFrame.TitleTemplateProperty field" Url="html/3869d977-48e8-9052-26fb-4026d36d4bf7.htm" />
+  <HelpKINode Title="BionicSwipePageFrameHeader class">
+    <HelpKINode Title="BionicSwipePageFrameHeader Class" Url="html/9bd1c3a3-760d-8157-2cf4-f01175594bb8.htm" />
+    <HelpKINode Title="constructor" Url="html/613487e1-12a9-ae19-e61d-a7b11e9e0437.htm" />
+    <HelpKINode Title="events" Url="html/aa1ad1a3-7d90-f57c-ab87-620cbc537593.htm" />
+    <HelpKINode Title="fields" Url="html/8e250fe6-a607-98dc-dd0a-71c5f2f55064.htm" />
+    <HelpKINode Title="methods" Url="html/71aeddbc-e8c8-ceb6-d511-8cb14197557c.htm" />
+    <HelpKINode Title="properties" Url="html/b31029f0-57fd-5256-dab3-5da426a4c80c.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BionicSwipePageFrameHeader.BionicSwipePageFrameHeader constructor" Url="html/613487e1-12a9-ae19-e61d-a7b11e9e0437.htm" />
+  <HelpKINode Title="BionicSwipePageFrameHeader.ButtonStyleKey property" Url="html/452b6e31-4de2-cb20-7eef-12665cfc1d66.htm" />
+  <HelpKINode Title="BionicSwipePageFrameHeader.IconHeight property" Url="html/306ca271-ea8c-0a6e-3dd3-039ca5c6527a.htm" />
+  <HelpKINode Title="BionicSwipePageFrameHeader.IconHeightProperty field" Url="html/123cd0da-8f37-5d59-888f-80231e936af4.htm" />
+  <HelpKINode Title="BionicSwipePageFrameHeader.IconWidth property" Url="html/91fc9585-f65e-4b63-c4dc-8199ea4e0c83.htm" />
+  <HelpKINode Title="BionicSwipePageFrameHeader.IconWidthProperty field" Url="html/d5c2d719-cfb8-2ae7-1613-e613505d813f.htm" />
+  <HelpKINode Title="BionicSwipePageFrameHeader.OnApplyTemplate method" Url="html/68f041d6-2300-4e94-7f06-d0ee34bf4018.htm" />
+  <HelpKINode Title="BionicSwipePageFrameHeader.TitleDataTemplateSelector property" Url="html/004a542e-58de-ffba-92ac-cf798c55eb90.htm" />
+  <HelpKINode Title="BionicSwipePageFrameHeader.TitleDataTemplateSelectorProperty field" Url="html/7016b78f-f6a7-895f-82f8-286c12bb5469.htm" />
+  <HelpKINode Title="BionicSwipePageFrameHeader.TitleTemplate property" Url="html/1f74e895-407c-0ce6-1832-fcd9bdb5a66a.htm" />
+  <HelpKINode Title="BionicSwipePageFrameHeader.TitleTemplateProperty field" Url="html/8bc79978-73ce-fd8b-8271-a70d69023c1e.htm" />
+  <HelpKINode Title="ButtonStyleKey property" Url="html/452b6e31-4de2-cb20-7eef-12665cfc1d66.htm" />
+  <HelpKINode Title="FrameHeaderStyle property" Url="html/698623ca-4373-af87-ce0b-0d8bc4449287.htm" />
+  <HelpKINode Title="FrameHeaderStyleProperty field" Url="html/c933f89d-99e0-67ee-9350-72001c85ecd3.htm" />
+  <HelpKINode Title="GetContainerForItemOverride method" Url="html/ba8c48c5-6083-dee8-4da6-026dd3af4360.htm" />
+  <HelpKINode Title="IconHeight property" Url="html/306ca271-ea8c-0a6e-3dd3-039ca5c6527a.htm" />
+  <HelpKINode Title="IconHeightProperty field" Url="html/123cd0da-8f37-5d59-888f-80231e936af4.htm" />
+  <HelpKINode Title="IconWidth property" Url="html/91fc9585-f65e-4b63-c4dc-8199ea4e0c83.htm" />
+  <HelpKINode Title="IconWidthProperty field" Url="html/d5c2d719-cfb8-2ae7-1613-e613505d813f.htm" />
+  <HelpKINode Title="IsHeaderVisible property" Url="html/07ca7423-85ce-c710-2a07-a0fd3b096e95.htm" />
+  <HelpKINode Title="IsHeaderVisibleProperty field" Url="html/cf36a946-ac1c-622d-308e-a996e8929659.htm" />
+  <HelpKINode Title="IsItemItsOwnContainerOverride method" Url="html/d4a4426c-1045-b798-aa2a-abae5efb2ae8.htm" />
+  <HelpKINode Title="IsLoopingPagesEnabled property" Url="html/1ea9587c-dccd-2a31-49b3-3f09f0533d72.htm" />
+  <HelpKINode Title="IsLoopingPagesEnabledProperty field" Url="html/45416499-9542-beee-ecf2-585d7f99f046.htm" />
+  <HelpKINode Title="LoadNextPageRoutedCommand field" Url="html/8b688eeb-a141-1809-f8b0-ccd668e69ca6.htm" />
+  <HelpKINode Title="LoadPageFromIndexRoutedCommand field" Url="html/e7a0383b-29e3-3765-4ead-a67e34aa384b.htm" />
+  <HelpKINode Title="LoadPageFromItemRoutedCommand field" Url="html/b66f65e6-cf96-ba9b-bbbb-209d93c20cdf.htm" />
+  <HelpKINode Title="LoadPreviousPageRoutedCommand field" Url="html/980a7dd5-8340-0ab4-4cf3-16c4e5657554.htm" />
+  <HelpKINode Title="NavigationDirection property" Url="html/5e97fd22-3446-d57b-7495-1fc4b6051f4e.htm" />
+  <HelpKINode Title="NavigationDirectionProperty field" Url="html/28045370-04f0-9288-6b9e-f07363cb0a8a.htm" />
+  <HelpKINode Title="NewValue property" Url="html/31356dc7-1cbe-8b98-1d25-70e29028032a.htm" />
+  <HelpKINode Title="Next enumeration member" Url="html/368c4ff0-9878-748a-c7ee-5ed4c1ea0529.htm" />
+  <HelpKINode Title="OldValue property" Url="html/4b164675-c5cd-d742-3dde-ead3025fd9a9.htm" />
+  <HelpKINode Title="OnApplyTemplate method">
+    <HelpKINode Title="BionicSwipePageFrame.OnApplyTemplate Method " Url="html/a3f95102-0a0d-313a-8c2f-97ca30f2c6c9.htm" />
+    <HelpKINode Title="BionicSwipePageFrameHeader.OnApplyTemplate Method " Url="html/68f041d6-2300-4e94-7f06-d0ee34bf4018.htm" />
+  </HelpKINode>
+  <HelpKINode Title="OnNavigationDirectionChanged method" Url="html/03fbc77e-4f04-74c9-bfa9-e1a12c925f68.htm" />
+  <HelpKINode Title="OnPageChanged method" Url="html/6ba2b971-98a6-d86a-f76d-8d1d18d88f34.htm" />
+  <HelpKINode Title="OnPreviousPageChanged method" Url="html/df23c9a9-7e95-73cb-8e73-8ae870052009.htm" />
+  <HelpKINode Title="OnSelectedIndexChanged method" Url="html/e80ba763-cab2-0c00-c177-fecb8e594f1f.htm" />
+  <HelpKINode Title="OnSelectedIndexChanging method" Url="html/eec46148-c4ff-8457-7a1c-372d7a7c0a25.htm" />
+  <HelpKINode Title="OnSelectedItemChanged method" Url="html/11bec0bc-485a-da2c-56d5-9c13c1e4cc60.htm" />
+  <HelpKINode Title="OnSelectedItemChanging method" Url="html/2e2058f7-6c46-52ca-8535-84cbf2a48ee0.htm" />
+  <HelpKINode Title="OnSelectedPageChanged method" Url="html/4606cdc2-0a6a-123f-9ea9-42ff4e4bf3bf.htm" />
+  <HelpKINode Title="PageChanged event" Url="html/feda15e8-30e4-8fe5-c82d-664537fd50ce.htm" />
+  <HelpKINode Title="PageChangedRoutedEvent field" Url="html/13bbbb7b-1bd7-7ebb-f8f5-9b8fa5a65e74.htm" />
+  <HelpKINode Title="PageNavigationDirection enumeration" Url="html/368c4ff0-9878-748a-c7ee-5ed4c1ea0529.htm" />
+  <HelpKINode Title="PreviewPageChanged event" Url="html/0cb9b9c4-3b85-88c8-f4ae-3a5fac612db7.htm" />
+  <HelpKINode Title="PreviewPageChangedRoutedEvent field" Url="html/203cc980-aa3e-115a-fa84-b3b05dca6016.htm" />
+  <HelpKINode Title="PreviewSelectedIndexChanged event" Url="html/52762556-cf5f-53c5-2576-95b4ebbc4967.htm" />
+  <HelpKINode Title="PreviewSelectedIndexChangedRoutedEvent field" Url="html/643b88e1-52b4-2733-e319-fa1feea10fe7.htm" />
+  <HelpKINode Title="PreviewSelectedIndexChanging event" Url="html/cb929dbc-bc81-24a5-fd00-acfbfda1f853.htm" />
+  <HelpKINode Title="PreviewSelectedIndexChangingRoutedEvent field" Url="html/a84e5526-8c0f-53f7-43f8-60f3a5637aba.htm" />
+  <HelpKINode Title="PreviewSelectedItemChanged event" Url="html/b8283dbb-463a-80cc-755e-8d929870753f.htm" />
+  <HelpKINode Title="PreviewSelectedItemChangedRoutedEvent field" Url="html/0f5dfcee-d1d2-e522-f348-2cb0da10cff1.htm" />
+  <HelpKINode Title="PreviewSelectedItemChanging event" Url="html/43bb113a-f974-a3ad-18f0-078370e4aa74.htm" />
+  <HelpKINode Title="PreviewSelectedItemChangingRoutedEvent field" Url="html/79ac038a-80c0-dec6-637e-63c92197df9d.htm" />
+  <HelpKINode Title="Previous enumeration member" Url="html/368c4ff0-9878-748a-c7ee-5ed4c1ea0529.htm" />
+  <HelpKINode Title="PreviousPage property" Url="html/d13f60bb-12ec-dccc-ff68-12ea92a31a5b.htm" />
+  <HelpKINode Title="PreviousPageProperty field" Url="html/3be4a304-24a7-b967-d9cd-0e74c0b53ce9.htm" />
+  <HelpKINode Title="PreviousSelectedIndex property" Url="html/440a517d-eb41-5cdd-4d6b-dec331bb49cc.htm" />
+  <HelpKINode Title="PreviousSelectedIndexProperty field" Url="html/4799ba73-46da-6c29-bc84-1f7eeede362f.htm" />
+  <HelpKINode Title="SelectedIndexChanged event" Url="html/4aa12d09-a3e0-f7c9-d0be-6ef37a010f7c.htm" />
+  <HelpKINode Title="SelectedIndexChangedRoutedEvent field" Url="html/8fead39d-5728-682f-7dd0-072a840641ea.htm" />
+  <HelpKINode Title="SelectedIndexChanging event" Url="html/ce84ba4e-1459-8eb6-f4f7-fe20f15e6157.htm" />
+  <HelpKINode Title="SelectedIndexChangingRoutedEvent field" Url="html/8006c248-9625-7124-7009-829a15b63396.htm" />
+  <HelpKINode Title="SelectedItemChanged event" Url="html/e2cec176-fdb3-8514-027a-c17046581321.htm" />
+  <HelpKINode Title="SelectedItemChangedRoutedEvent field" Url="html/a73d8b34-89ce-dd51-cd46-e98f43788e05.htm" />
+  <HelpKINode Title="SelectedItemChanging event" Url="html/14859116-47ca-eceb-e637-c5184cdd0ac9.htm" />
+  <HelpKINode Title="SelectedItemChangingRoutedEvent field" Url="html/1b2fe2fd-d667-b0e6-bb15-ac588aac16a7.htm" />
+  <HelpKINode Title="SelectedPage property" Url="html/c6ce4ab8-463a-169b-5aef-35d553649bdc.htm" />
+  <HelpKINode Title="SelectedPageProperty field" Url="html/5d583942-23cc-863f-266e-5633333ea581.htm" />
+  <HelpKINode Title="TitleDataTemplateSelector property">
+    <HelpKINode Title="BionicSwipePageFrame.TitleDataTemplateSelector Property " Url="html/0518c8de-dd11-c923-16b8-1b4d3b3e0514.htm" />
+    <HelpKINode Title="BionicSwipePageFrameHeader.TitleDataTemplateSelector Property " Url="html/004a542e-58de-ffba-92ac-cf798c55eb90.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TitleDataTemplateSelectorProperty field">
+    <HelpKINode Title="BionicSwipePageFrame.TitleDataTemplateSelectorProperty Field" Url="html/4eb70975-5219-71b3-c858-88b1bcae6c73.htm" />
+    <HelpKINode Title="BionicSwipePageFrameHeader.TitleDataTemplateSelectorProperty Field" Url="html/7016b78f-f6a7-895f-82f8-286c12bb5469.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TitleMemberPath property" Url="html/2ae94a5a-66d6-e23a-17b1-c60cdee5357a.htm" />
+  <HelpKINode Title="TitleMemberPathProperty field" Url="html/5d78cd0c-2f2c-e551-ab2d-dc2a49a8f840.htm" />
+  <HelpKINode Title="TitleTemplate property">
+    <HelpKINode Title="BionicSwipePageFrame.TitleTemplate Property " Url="html/595be176-708d-02a2-022f-9f63c2651e7f.htm" />
+    <HelpKINode Title="BionicSwipePageFrameHeader.TitleTemplate Property " Url="html/1f74e895-407c-0ce6-1832-fcd9bdb5a66a.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TitleTemplateProperty field">
+    <HelpKINode Title="BionicSwipePageFrame.TitleTemplateProperty Field" Url="html/3869d977-48e8-9052-26fb-4026d36d4bf7.htm" />
+    <HelpKINode Title="BionicSwipePageFrameHeader.TitleTemplateProperty Field" Url="html/8bc79978-73ce-fd8b-8271-a70d69023c1e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Undefined enumeration member" Url="html/368c4ff0-9878-748a-c7ee-5ed4c1ea0529.htm" />
+  <HelpKINode Title="ValueChangedRoutedEventArgs(Of TValue) class">
+    <HelpKINode Title="ValueChangedRoutedEventArgs(TValue) Class" Url="html/fec83261-e4fb-97a4-d802-1bd3e43effac.htm" />
+    <HelpKINode Title="constructor" Url="html/3e57631b-040e-de8b-b86f-28aed7b68d53.htm" />
+    <HelpKINode Title="methods" Url="html/22aff6c2-973c-3c0d-3900-d7497d029e13.htm" />
+    <HelpKINode Title="properties" Url="html/309eb2d2-1f50-63c6-4056-519cfedf5233.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ValueChangedRoutedEventArgs(Of TValue).NewValue property" Url="html/31356dc7-1cbe-8b98-1d25-70e29028032a.htm" />
+  <HelpKINode Title="ValueChangedRoutedEventArgs(Of TValue).OldValue property" Url="html/4b164675-c5cd-d742-3dde-ead3025fd9a9.htm" />
+  <HelpKINode Title="ValueChangedRoutedEventArgs(Of TValue).ValueChangedRoutedEventArgs constructor" Url="html/3e57631b-040e-de8b-b86f-28aed7b68d53.htm" />
+  <HelpKINode Title="ValueChangedRoutedEventArgs&lt;TValue&gt; class">
+    <HelpKINode Title="ValueChangedRoutedEventArgs(TValue) Class" Url="html/fec83261-e4fb-97a4-d802-1bd3e43effac.htm" />
+    <HelpKINode Title="constructor" Url="html/3e57631b-040e-de8b-b86f-28aed7b68d53.htm" />
+    <HelpKINode Title="methods" Url="html/22aff6c2-973c-3c0d-3900-d7497d029e13.htm" />
+    <HelpKINode Title="properties" Url="html/309eb2d2-1f50-63c6-4056-519cfedf5233.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ValueChangedRoutedEventArgs&lt;TValue&gt;.NewValue property" Url="html/31356dc7-1cbe-8b98-1d25-70e29028032a.htm" />
+  <HelpKINode Title="ValueChangedRoutedEventArgs&lt;TValue&gt;.OldValue property" Url="html/4b164675-c5cd-d742-3dde-ead3025fd9a9.htm" />
+  <HelpKINode Title="ValueChangedRoutedEventArgs&lt;TValue&gt;.ValueChangedRoutedEventArgs constructor" Url="html/3e57631b-040e-de8b-b86f-28aed7b68d53.htm" />
+  <HelpKINode Title="ValueChangedRoutedEventHandler(Of TValue) delegate" Url="html/5f0b2963-0e7e-1692-83c0-ebf5511c2f16.htm" />
+  <HelpKINode Title="ValueChangedRoutedEventHandler&lt;TValue&gt; delegate" Url="html/5f0b2963-0e7e-1692-83c0-ebf5511c2f16.htm" />
+  <HelpKINode Title="version">
+    <HelpKINode Title="1.0.0.0" Url="html/b1dcd274-1881-4e09-a663-93fb067c8d0f.htm" />
+    <HelpKINode Title="history" Url="html/03fa0d3b-3048-45a8-9258-1319427d0ece.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Welcome" Url="html/05c0ebdc-c4e5-44b9-9000-bb49cd2a96f4.htm" />
+</HelpKI>
