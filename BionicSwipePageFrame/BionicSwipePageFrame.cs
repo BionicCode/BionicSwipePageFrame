@@ -476,8 +476,10 @@ namespace BionicCode.BionicSwipePageFrame
         Path = new PropertyPath(nameof(this.SelectedPage))
       };
       this.PART_SelectedPageHost.SetBinding(ContentPresenter.ContentProperty, pageContentBinding);
+      this.IsInitialized = true;
       this.SelectedIndex = 0;
       UpdateSelectedPage();
+
     }
 
     private static void OnTitleMemberPathChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
@@ -724,8 +726,6 @@ namespace BionicCode.BionicSwipePageFrame
       this.PART_PageHostPanel = GetTemplateChild("PART_PageHostPanel") as Panel;
       this.PART_SelectedPageHost = GetTemplateChild("PART_SelectedPageHost") as ContentPresenter;
       this.PART_SelectedPageHost.Visibility = Visibility.Visible;
-
-      this.IsInitialized = true;
     }
 
     #endregion
@@ -1035,7 +1035,7 @@ namespace BionicCode.BionicSwipePageFrame
       this.PreviousPage = GetPageContainerAt(this.PreviousSelectedIndex);
 
       //Take a snapshot of the current frame header title element
-     this.AnimatedPreviousPageHeaderTitle.Fill = new VisualBrush(this.PART_PageHeader.PART_PageHeaderHostPanel);
+      this.AnimatedPreviousPageHeaderTitle.Fill = new VisualBrush(this.PART_PageHeader.PART_PageHeaderHostPanel);
       //this.AnimatedPreviousPageHeaderTitle.Fill = Brushes.IndianRed;
     }
 

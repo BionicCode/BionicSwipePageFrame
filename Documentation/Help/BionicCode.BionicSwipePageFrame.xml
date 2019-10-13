@@ -135,20 +135,6 @@
     <member name="M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnApplyTemplate">
       <summary>When overridden in a derived class, is invoked whenever application code or internal processes call <see cref="M:System.Windows.FrameworkElement.ApplyTemplate" />.</summary>
     </member>
-    <member name="M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnInitialized(System.EventArgs)">
-      <summary>
-                This virtual method in called when IsInitialized is set to true and it raises an Initialized event
-            </summary>
-      <param name="e">
-        <markup>
-          <include item="SMCMissingParamTag">
-            <parameter>param</parameter>
-            <parameter>e</parameter>
-            <parameter>M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnInitialized(System.EventArgs)</parameter>
-          </include>
-        </markup>
-      </param>
-    </member>
     <member name="M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.OnNavigationDirectionChanged(BionicCode.BionicSwipePageFrame.PageNavigationDirection,BionicCode.BionicSwipePageFrame.PageNavigationDirection)">
       <summary> 
             Called when the <see cref="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.NavigationDirection" /> property changes.
@@ -499,6 +485,26 @@
             The DependencyProperty for the <see cref="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.SelectedPage" /> property.
             </summary>
     </member>
+    <member name="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.TitleDataTemplateSelector">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.TitleDataTemplateSelector</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.TitleDataTemplateSelectorProperty">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.TitleDataTemplateSelectorProperty</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
     <member name="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.TitleMemberPath">
       <summary>
             The property path to the property that holds the page title <c>String</c>. The property path is relative to the data model type. <br /><br />
@@ -509,6 +515,26 @@
       <summary>
             The DependencyProperty for <see cref="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.TitleMemberPath" />.
             </summary>
+    </member>
+    <member name="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.TitleTemplate">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.TitleTemplate</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.TitleTemplateProperty">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrame.TitleTemplateProperty</parameter>
+          </include>
+        </markup>
+      </summary>
     </member>
     <member name="T:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader">
       <summary>
@@ -581,6 +607,46 @@
     </member>
     <member name="M:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.OnApplyTemplate">
       <summary>When overridden in a derived class, is invoked whenever application code or internal processes call <see cref="M:System.Windows.FrameworkElement.ApplyTemplate" />.</summary>
+    </member>
+    <member name="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.TitleDataTemplateSelector">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.TitleDataTemplateSelector</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.TitleDataTemplateSelectorProperty">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.TitleDataTemplateSelectorProperty</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.TitleTemplate">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>P:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.TitleTemplate</parameter>
+          </include>
+        </markup>
+      </summary>
+    </member>
+    <member name="F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.TitleTemplateProperty">
+      <summary>
+        <markup>
+          <include item="SMCMissingTag">
+            <parameter>summary</parameter>
+            <parameter>F:BionicCode.BionicSwipePageFrame.BionicSwipePageFrameHeader.TitleTemplateProperty</parameter>
+          </include>
+        </markup>
+      </summary>
     </member>
     <member name="T:BionicCode.BionicSwipePageFrame.PageNavigationDirection">
       <summary>
